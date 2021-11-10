@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link href="../stylesheets/normalize.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets/fonts.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets/forms__volunteering.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets/animation.css" rel="stylesheet" type="text/css">
+    <title>Волонтерство</title>
+  </head>
+  <body>
+    <header>
+    </header>
+
+    <main class="volunteering">
+      <form class="volunteering__form volunteering-form" name="form">
+        <h3 class="volunteering-form__title-h3">Волонтерство</h3>
+        <hr class="volunteering-form__delimeter">
+        <h4 class="volunteering-form__title-h4">Заявка</h4>
+        <p class="volunteering-form__text">Отправьте нам заявку о том, что готовы помочь. 
+          Когда нам будет необходима помощь, мы позвоним 
+          вам.</p>
+        <label class="volunteering-form__label label-full-name" for=id-full-name>Фамилия и имя</label>
+        <input class="volunteering-form__input"
+          type="text"
+          name="full-name"
+          id="id-full-name"
+          placeholder="Введите ваше имя и фамилию"
+          minlength="2"
+          maxlength="56"
+          autofocus>
+        <label class="volunteering-form__label label-phone" for=id-phone>Номер телефона (только белорусский номер)</label>
+        <input class="volunteering-form__input"
+          type="tel"
+          name="phone"
+          id="id-phone"
+          placeholder="Введите ваш номер телефона"
+          pattern="[0-9]{13}"
+          minlength="13"
+          maxlength="13"
+          required>
+        <label class="volunteering-form__label label-phone-warning" for="id-phone">Обязательное поле для заполнения</label>
+        <div class="volunteering-form__radio radio-choice">
+          <div class="radio-choice__wrapper-radio">
+            <input class="radio-choice__input"
+              type="radio"
+              name="radio"
+              id="id-radio-1"
+              checked>
+            <label class="radio-choice__label" for="id-radio-1">Хочу помогать на постоянной основе (расписание 
+              можно подобрать так, как будет удобно для всех)</label>
+          </div>
+          <div class="radio-choice__wrapper-radio">
+            <input class="radio-choice__input"
+              type="radio"
+              name="radio"
+              id="id-radio-2">
+            <label class="radio-choice__label" for="id-radio-2">Готов помогать иногда. Хочу выбрать удобное для меня время</label>
+          </div>
+        </div>
+        <label class="volunteering-form__label label-remarks" for="id-remarks">Замечания</label>
+        <textarea class="volunteering-form__textarea"
+          name="remarks"
+          id="id-remarks"
+          placeholder="Опишите, как вы сможете нам помочь и удобное время для вас"
+          maxlength="500"></textarea>
+        <div class="volunteering-form__buttons volunteering-button">
+          <input class="volunteering-button__submit" type="submit" name="submit" id="id-submit" value="Отправить заявку">
+          <button class="volunteering-button__cancel">Отмена</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+    </footer>
+  </body>
+</html>

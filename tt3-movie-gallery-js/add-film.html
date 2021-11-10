@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/normalize.css">
+    <link rel="stylesheet" href="./stylesheets/fonts.css">
+    <link rel="stylesheet" href="./stylesheets/styles.css">
+    <title>Add film</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__navigation">
+        <a class="header__home-link" href="./index.html" >
+          <img class="header__home-image" src="./images/home__icon.svg" alt="Иконка дома">
+        </a>
+        <p class="header__user-name">
+          <img class="header__user-picture" src="./images/account__icon.svg"
+          ></p>
+        <a class="header__sign-in" href="./sign-in.html">Sign In/Sign Up</a>
+        <button class="header__logout">Logout</button>
+      </nav>
+    </header>
+
+    <section class="add-film">
+      <form class="add-film__form form-add-film" action="">
+        <div class="form-add-film__item-wrapper">
+          <label class="form-add-film__label" for="id-title">Title</label>
+          <input class="form-add-film__input"
+            type="text"
+            name="title"
+            id="id-title"
+            minlength="3"
+            required>
+          <label class="form-add-film__label-error" for="id-title">Название должно содержать более 3 символов.</label>
+        </div>
+        <div class="form-add-film__item-wrapper">
+          <label class="form-add-film__label" for="id-overview">Overview</label>
+          <textarea class="form-add-film__textarea"
+            name="overview"
+            id="id-overview"
+            minlength="3"
+            maxlength="150"
+            required></textarea>
+          <label class="form-add-film__label-error" for="id-overview">Описание должно содержать от 3 до 150 символов.</label>
+        </div>
+        <div class="form-add-film__item-wrapper">
+          <label class="form-add-film__label" for="id-poster">Poster</label>
+          <input class="form-add-film__input"
+            type="text"
+            name="poster"
+            id="id-poster"
+            value="/Ak3WXExyPIvh0oOeAlo2VIcJuvG.jpg"
+            required>
+          <label class="form-add-film__label-error" for="id-poster">Поле не должно быть пустым.</label>
+        </div>
+        <div class="form-add-film__item-wrapper">
+          <label class="form-add-film__label" for="id-popularity">Popularity</label>
+          <input class="form-add-film__input"
+            type="text"
+            name="popularity"
+            id="id-popularity"
+            pattern="\d+(\.\d{1,})?"
+            required>
+          <label class="form-add-film__label-error" for="id-popularity">Введите значение от 0.5 до 10</label>
+        </div>
+        <div class="form-add-film__item-wrapper">
+          <label class="form-add-film__label" for="id-release-date">Release date</label>
+          <input class="form-add-film__input"
+            type="date"
+            name="release-date"
+            id="id-release-date"
+            required>
+          <label class="form-add-film__label-error" for="id-release-date">Нужно выбрать дату релиза.</label>
+        </div>
+        <div class="form-add-film__item-wrapper">
+          <label class="form-add-film__label" for="id-genres" >Genres</label>
+          <select class="form-add-film__select-list" name="genres" id="id-genres" multiple="multiple" required>
+            <!-- Оставил, чтобы показать структуру -->
+            <!-- <option class="form-add-film__select-item" value="123">first</option> -->
+          </select>
+          <label class="form-add-film__label-error" for="id-genres">Укажите жанр.</label>
+        </div>
+        <div class="form-add-film__item-wrapper">
+          <label class="form-add-film__label" for="id-vote-average">Vote average</label>
+          <input class="form-add-film__input"
+            type="number"
+            name="vote-average"
+            id="id-vote-average"
+            min="0.5"
+            max="10"
+            step="0.1"
+            required>
+          <label class="form-add-film__label-error" for="id-vote-average">Поле может включать в себя только цифры и разделитель.</label>
+        </div>
+        <div class="form-add-film__item-wrapper">
+          <label class="form-add-film__label" for="id-vote-count">Vote count</label>
+          <input class="form-add-film__input"
+            type="text"
+            name="vote-count"
+            id="id-vote-count"
+            pattern="[0-9]+$"
+            required>
+          <label class="form-add-film__label-error" for="id-vote-count">Поле может включать в себя только целые числа.</label>
+        </div>
+        <div class="form-add-film__item-wrapper">
+          <label class="form-add-film__label" for="id-adult">Adult:</label>
+          <input class="form-add-film__checkbox"
+            type="checkbox"
+            name="adult"
+            id="id-adult">
+        </div>
+        <div class="form-add-film__button-wrapper">
+          <button class="form-add-film__button" type="button">Submit</button>
+          <button class="form-add-film__button form-add-film__button--alt" type="reset">Clear</button>
+        </div>
+      </form>
+    </section>
+    <script src="./scripts/login.js"></script>
+    <script src="./scripts/validation.js"></script>
+    <script src="./scripts/add-film.js"></script>
+  </body>
+</html>

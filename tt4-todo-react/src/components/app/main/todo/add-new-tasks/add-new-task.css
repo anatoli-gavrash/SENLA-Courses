@@ -1,0 +1,29 @@
+.tasks__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 759px;
+  margin-left: 27px;
+  margin-right: 20px;
+}
+
+.form__label {
+  font-family: 'Salesforce Sans', 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #706E6B;
+}
+
+.form__textarea {
+  resize: vertical;
+  display: block;
+  width: 100%; 
+  height: 90px;
+  min-height: 90px;
+  margin-top: 4px;
+  padding: 5px;
+  border: 1px solid #dddbda;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #53565A;
+}

@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('../fonts/Roboto/Roboto-Regular.woff2') format('woff2'),
+      url('../fonts/Roboto/Roboto-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/Roboto/Roboto-Medium.woff2') format('woff2'),
+      url('../fonts/Roboto/Roboto-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url('../fonts/Roboto/Roboto-Bold.woff2') format('woff2'),
+      url('../fonts/Roboto/Roboto-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('../fonts/Roboto/Roboto-Black.woff2') format('woff2'),
+      url('../fonts/Roboto/Roboto-Black.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Salesforce Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('../fonts/Salesforce_Sans/SalesforceSans-Regular.woff2') format('woff2'),
+      url('../fonts/Salesforce_Sans/SalesforceSans-Regular.woff') format('woff');
+}

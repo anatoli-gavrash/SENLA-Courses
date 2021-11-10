@@ -1,0 +1,813 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Общий стиль для всех страниц --------------------------------------------------------- */
+html {
+  font-family: 'LilitaOneRussian', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: rgb(77, 114, 154);
+  background-image: url('../images/background.jpg');
+  background-attachment: fixed;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 20px 20px 0 20px;
+}
+
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.header__home-link {
+  display: block;
+  flex-shrink: 0;
+  text-decoration: none;
+  width: 36px;
+  height: 36px;
+  padding: 2px;
+  border: 2px solid rgb(77, 114, 154);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 0px 0px rgb(77, 114, 154);
+  transition: box-shadow 0.2s;
+}
+
+.header__home-link:hover,
+.header__sign-in:hover,
+.header__logout:hover {
+  box-shadow: 1px 1px 10px rgba(14, 91, 173, 0.5);
+}
+
+.header__home-link:active,
+.header__sign-in:active,
+.header__logout:active {
+  transition: box-shadow 0.1s;
+  box-shadow: 1px 1px 3px rgba(14, 91, 173, 0.5), inset 1px 1px 5px rgba(14, 91, 173, 0.5);
+}
+
+.header__home-image {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.header__user-name {
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+  flex-grow: 1;
+  font-size: 24px;
+}
+
+.header__user-picture {
+  width: 27px;
+  height: 27px;
+}
+
+.header__sign-in {
+  display: none;
+  flex-shrink: 0;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-align: center;
+  border: 3px solid rgb(77, 114, 154);
+  border-radius: 10px;
+  font-size: 19px;
+  color: rgb(77, 114, 154);
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 0px 0px rgb(77, 114, 154);
+  transition: box-shadow 0.2s;
+}
+
+.header__logout {
+  display: none;
+  padding: 5px 10px;
+  border: 3px solid rgb(77, 114, 154);
+  border-radius: 10px;
+  font-size: 19px;
+  color: rgb(77, 114, 154);
+  background-color: unset;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 0px 0px rgb(77, 114, 154);
+  transition: box-shadow 0.2s;
+}
+
+.button-enable {
+  display: inline-block;
+}
+/* /Общий стиль для всех страниц */
+
+
+/* Главная страница -------------------------------------------------------- */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 20px 20px 20px;
+}
+
+  /* Сортировка */
+  .gallery__form {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  .gallery__sorting {
+    min-width: 200px;
+    height: 30px;
+    border: 2px solid rgb(77, 114, 154);
+    border-radius: 5px;
+    font-family: 'LilitaOneRussian', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    color: rgb(77, 114, 154);
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .gallery__sorting:hover {
+    box-shadow: 1px 1px 10px rgba(14, 91, 173, 0.5);
+  }
+
+  .gallery__sorting:active {
+    transition: box-shadow 0.1s;
+    box-shadow: 1px 1px 3px rgba(14, 91, 173, 0.5), inset 1px 1px 5px rgba(14, 91, 173, 0.5);
+  }
+
+  .gallery__sorting:focus {
+    box-shadow: 1px 1px 3px rgba(14, 91, 173, 0.5), inset 1px 1px 5px rgba(14, 91, 173, 0.5);
+  }
+
+  .gallery__add-link {
+    display: none;
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+  }
+
+  .show-add-link {
+    display: inline-block;
+  }
+
+  .gallery__add-image {
+    width: 100%;
+    height: 100%;
+  }
+  /* /Сортировка */
+
+  /* Пагинация */
+  .gallery__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 0;
+    min-width: 300px;
+    height: 30px;
+  }
+
+  .pagination__item {
+    list-style-type: none;
+  }
+
+  .pagination__button {
+    min-width: 50px;
+    height: 30px;
+    margin: 0 1px;
+    padding: 0px 7px;
+    border: 2px solid rgb(77, 114, 154);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(77, 114, 154);
+    box-shadow: 0px 0px 0px 0px rgba(14, 91, 173, 0.5);
+    transition: box-shadow 0.2s;
+  }
+
+  .pagination__button:hover {
+    box-shadow: 0px 0px 5px 1px rgba(14, 91, 173, 0.5);
+  }
+
+  .pagination__item.active .pagination__button {
+    background-image: radial-gradient(rgba(14, 91, 173, 0.5) 0%, transparent 50%);
+  }
+
+  .pagination__button:active {
+    transition: box-shadow 0.1s;
+    box-shadow: 1px 1px 3px rgba(14, 91, 173, 0.5), inset 0px 0px 10px 2px rgba(14, 91, 173, 0.5);
+  }
+  /* /Пагинация */
+
+  /* Список постеров */
+  .gallery__video-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 850px;
+    margin: 0 auto;
+  }
+
+  .video-list__item {
+    margin: 10px;
+    list-style-type: none;
+    box-shadow: 0px 0px 0px 0px rgba(14, 91, 173, 0.5);
+    border-radius: 11px 2px 11px 2px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: box-shadow 0.2s, border-radius 0.2s;
+  }
+
+  .video-list__item:hover {
+    box-shadow: 0px 0px 10px 3px rgba(14, 91, 173, 0.5);
+  }
+
+  .video-list__details-wrapper {
+    position: relative;
+    width: 150px;
+  }
+
+  .video-list__film-poster {
+    display: block;
+    width: 100%;
+    border-radius: 10px 2px;
+  }
+
+  .video-list__rating,
+  .video-list__release-date {
+    display: none;
+    position: absolute;
+    padding: 0 2px;
+    background-color: #ffffff;
+    border: 1px solid rgb(77, 114, 154);
+    border-radius: 5px 0 5px 0;
+    box-shadow: 0px 0px 3px 2px rgba(14, 91, 173, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .video-list__rating {
+    top: 10px;
+    left: 10px;
+  }
+
+  .video-list__button-delete {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgb(77, 114, 154);
+    border-radius: 7px;
+    background-image: url('../images/recycle__icon.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 3px 2px rgba(14, 91, 173, 0.5);
+  }
+
+  .video-list__release-date {
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .video-list__details-wrapper:hover .video-list__rating,
+  .video-list__details-wrapper:hover .video-list__release-date,
+  .video-list__details-wrapper:focus .video-list__rating,
+  .video-list__details-wrapper:focus .video-list__release-date {
+    display: block;
+  }
+
+  .video-list__details-wrapper:hover .show-button-delete,
+  .video-list__details-wrapper:focus .show-button-delete {
+    display: block;
+  }
+
+  .video-list__filmName {
+    text-align: center;
+    width: 150px;
+  }
+  /* /Список постеров */
+/* /Главная страница */
+
+
+/* Страница добавления фильма -------------------------------------------------------- */
+.add-film {
+  margin: 50px auto;
+  padding: 0 20px;
+  max-width: 600px;
+}
+
+.add-film__form {
+  position: relative;
+}
+
+.form-add-film__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.form-add-film__item-wrapper:nth-last-child(2) {
+  flex-direction: row;
+  align-items: center;
+  column-gap: 7px;
+}
+
+.form-add-film__item-wrapper:nth-of-type(n+3) {
+  max-width: 50%;
+}
+
+.form-add-film__item-wrapper:nth-of-type(6) {
+  position: absolute;
+  right: 0px;
+  bottom: 90px;
+  width: 47%;
+}
+
+.form-add-film__label,
+.form-add-film__label-error {
+  margin-left: 5px;
+}
+
+.form-add-film__label-error {
+  display: none;
+  color: rgb(255, 51, 51);
+  font-size: 15px;
+}
+
+.form-add-film__input {
+  padding: 5px;
+  border: 2px solid rgb(77, 114, 154);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(77, 114, 154);
+}
+
+.form-add-film__textarea {
+  resize: vertical;
+  min-height: 100px;
+  padding: 5px;
+  border: 2px solid rgb(77, 114, 154);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(77, 114, 154);
+}
+
+.form-add-film__select-list {
+  height: 32px;
+  border: 2px solid rgb(77, 114, 154);
+  border-radius: 5px;
+  color: rgb(77, 114, 154);
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 277px;
+}
+
+.form-add-film__input:hover,
+.form-add-film__textarea:hover,
+.form-add-film__select-list:hover {
+  box-shadow: 1px 1px 10px rgba(14, 91, 173, 0.5);
+}
+
+.form-add-film__input:active,
+.form-add-film__textarea:active,
+.form-add-film__select-list:active {
+  transition: box-shadow 0.1s;
+  box-shadow: 1px 1px 3px rgba(14, 91, 173, 0.5), inset 1px 1px 5px rgba(14, 91, 173, 0.5);
+}
+
+.form-add-film__input:focus,
+.form-add-film__textarea:focus,
+.form-add-film__select-list:focus {
+  box-shadow: 1px 1px 3px rgba(14, 91, 173, 0.5), inset 1px 1px 5px rgba(14, 91, 173, 0.5);
+}
+
+.form-add-film__button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  column-gap: 15px;
+}
+
+.form-add-film__button {
+  flex-shrink: 0;
+  min-width: 150px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 19px;
+  background-color: rgb(77, 114, 154);
+  color: white;
+  box-shadow: 0px 0px 0px 0px rgb(77, 114, 154);
+  transition: box-shadow 0.2s;
+}
+
+.form-add-film__button:hover {
+  box-shadow: 1px 1px 10px rgba(14, 91, 173, 0.5);
+}
+
+.form-add-film__button:active {
+  transition: box-shadow 0.1s;
+  box-shadow: 1px 1px 3px rgba(14, 91, 173, 0.5), inset 1px 1px 5px rgba(6, 37, 71, 0.7);
+}
+
+.form-add-film__button--alt {
+  border: 3px solid rgb(77, 114, 154);
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(77, 114, 154);
+}
+
+.form-add-film__button--alt:hover {
+  box-shadow: 1px 1px 10px rgba(14, 91, 173, 0.5);
+}
+
+.form-add-film__button--alt:active {
+  transition: box-shadow 0.1s;
+  box-shadow: 1px 1px 3px rgba(14, 91, 173, 0.5), inset 1px 1px 5px rgba(14, 91, 173, 0.5);
+}
+/* /Страница добавления фильма */
+
+
+/* Страница входа -------------------------------------------------------- */
+.sign-in {
+  margin: 50px auto 20px auto;
+  padding: 0 20px;
+  max-width: 350px;
+}
+
+.form-sign-in__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.form-sign-in__label,
+.form-sign-in__label-error {
+  margin-left: 5px;
+}
+
+.form-sign-in__label-error {
+  display: none;
+  color: rgb(255, 51, 51);
+  font-size: 15px;
+}
+
+.form-sign-in__input {
+  padding: 5px;
+  border: 2px solid rgb(77, 114, 154);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(77, 114, 154);
+}
+
+.form-sign-in__input:hover {
+  box-shadow: 1px 1px 10px rgba(14, 91, 173, 0.5);
+}
+
+.form-sign-in__input:active {
+  transition: box-shadow 0.1s;
+  box-shadow: 1px 1px 3px rgba(14, 91, 173, 0.5), inset 1px 1px 5px rgba(14, 91, 173, 0.5);
+}
+
+.form-sign-in__input:focus {
+  box-shadow: 1px 1px 3px rgba(14, 91, 173, 0.5), inset 1px 1px 5px rgba(14, 91, 173, 0.5);
+}
+
+.form-sign-in__button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  column-gap: 15px;
+}
+
+.form-sign-in__button-submit {
+  flex-shrink: 0;
+  min-width: 120px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 19px;
+  background-color: rgb(77, 114, 154);
+  color: white;
+  box-shadow: 0px 0px 0px 0px rgb(77, 114, 154);
+  transition: box-shadow 0.2s;
+}
+
+.form-sign-in__button-submit:hover {
+  box-shadow: 1px 1px 10px rgba(14, 91, 173, 0.5);
+}
+
+.form-sign-in__button-submit:active {
+  transition: box-shadow 0.1s;
+  box-shadow: 1px 1px 3px rgba(14, 91, 173, 0.5), inset 1px 1px 5px rgba(6, 37, 71, 0.7);
+}
+
+.form-sign-in__registration-link {
+  flex-shrink: 0;
+  min-width: 120px;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-align: center;
+  border: 3px solid rgb(77, 114, 154);
+  border-radius: 10px;
+  background-color: unset;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(77, 114, 154);
+  box-shadow: 0px 0px 0px 0px rgb(77, 114, 154);
+  transition: box-shadow 0.2s;
+}
+
+.form-sign-in__registration-link:hover {
+  box-shadow: 1px 1px 10px rgba(14, 91, 173, 0.5);
+}
+
+.form-sign-in__registration-link:active {
+  transition: box-shadow 0.1s;
+  box-shadow: 1px 1px 3px rgba(14, 91, 173, 0.5), inset 1px 1px 5px rgba(14, 91, 173, 0.5);
+}
+/* /Страница входа */
+
+
+/* Страница регистрации -------------------------------------------------------- */
+.registration {
+  margin: 50px auto 20px auto;
+  padding: 0 20px;
+  max-width: 350px;
+}
+
+.form-registration__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.form-registration__label,
+.form-registration__label-error,
+.form-registration__label-error-alt {
+  margin-left: 5px;
+}
+
+.form-registration__label-error,
+.form-registration__label-error-alt {
+  display: none;
+  color: rgb(255, 51, 51);
+  font-size: 15px;
+}
+
+.form-registration__input {
+  padding: 5px;
+  border: 2px solid rgb(77, 114, 154);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(77, 114, 154);
+}
+
+.form-registration__input:hover {
+  box-shadow: 1px 1px 10px rgba(14, 91, 173, 0.5);
+}
+
+.form-registration__input:active {
+  transition: box-shadow 0.1s;
+  box-shadow: 1px 1px 3px rgba(14, 91, 173, 0.5), inset 1px 1px 5px rgba(14, 91, 173, 0.5);
+}
+
+.form-registration__input:focus {
+  box-shadow: 1px 1px 3px rgba(14, 91, 173, 0.5), inset 1px 1px 5px rgba(14, 91, 173, 0.5);
+}
+
+.form-registration__button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  column-gap: 15px;
+}
+
+.form-registration__button {
+  flex-shrink: 0;
+  min-width: 150px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 19px;
+  background-color: rgb(77, 114, 154);
+  color: white;
+  box-shadow: 0px 0px 0px 0px rgb(77, 114, 154);
+  transition: box-shadow 0.2s;
+}
+
+.form-registration__button:hover {
+  box-shadow: 1px 1px 10px rgba(14, 91, 173, 0.5);
+}
+
+.form-registration__button:active {
+  transition: box-shadow 0.1s;
+  box-shadow: 1px 1px 3px rgba(14, 91, 173, 0.5), inset 1px 1px 5px rgba(6, 37, 71, 0.7);
+}
+
+.form-registration__button--alt {
+  border: 3px solid rgb(77, 114, 154);
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(77, 114, 154);
+}
+
+.form-registration__button--alt:hover {
+  box-shadow: 1px 1px 10px rgba(14, 91, 173, 0.5);
+}
+
+.form-registration__button--alt:active {
+  transition: box-shadow 0.1s;
+  box-shadow: 1px 1px 3px rgba(14, 91, 173, 0.5), inset 1px 1px 5px rgba(14, 91, 173, 0.5);
+}
+/* /Страница регистрации */
+
+
+/* Подробная информация о фильме -------------------------------------------------------- */
+.film-details {
+  display: flex;
+  margin: 50px 20px 20px 20px;
+  column-gap: 15px;
+}
+
+.form-details__title {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+  /* Постер и кнопки */
+  .film-details__wrapper {
+    position: relative;
+    width: 100%;
+    min-width: 250px;
+    max-width: 500px;
+  }
+
+  .film-details__poster {
+    display: block;
+    width: 100%;
+  }
+
+  .film-details__button-delete,
+  .film-details__button-edit {
+    display: none;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgb(77, 114, 154);
+    border-radius: 7px;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 3px 2px rgba(14, 91, 173, 0.5);
+  }
+
+  .film-details__button-delete {
+    top: 15px;
+    right: 15px;
+    background-image: url('../images/recycle__icon.svg');
+  }
+
+  .film-details__button-edit {
+    top: 15px;
+    left: 15px;
+    background-image: url('../images/edit__icon.svg');
+    background-size: 75%;
+  }
+
+  .show-button {
+    display: inline-block;
+  }
+  /* /Постер и кнопки */
+
+  /* Секция с информацией о фильме */
+  .film-details__block {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .film-details__title {
+    width: max-content;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+  }
+
+  .film-details__items-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  .film-details__items-wrapper *:nth-child(n) {
+    flex-shrink: 0;
+  }
+
+  .text-rating {
+    display: inline-block;
+    padding: 5px;
+    font-size: 20px;
+    border: 3px solid rgb(77, 114, 154);
+    border-radius: 20px;
+  }
+
+  .film-details__form {
+    display: none;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  .film-details__form--show {
+    display: flex;
+  }
+
+  .form-vote__item-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-vote__label,
+  .form-vote__label-error {
+    margin-left: 5px;
+  }
+
+  .form-vote__label-error {
+    display: none;
+    color: rgb(255, 51, 51);
+    font-size: 15px;
+  }
+
+  .form-vote__input {
+    padding: 5px;
+    border: 2px solid rgb(77, 114, 154);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(77, 114, 154);
+  }
+
+  .form-vote__input:hover {
+    box-shadow: 1px 1px 10px rgba(14, 91, 173, 0.5);
+  }
+
+  .form-vote__input:active {
+    transition: box-shadow 0.1s;
+    box-shadow: 1px 1px 3px rgba(14, 91, 173, 0.5), inset 1px 1px 5px rgba(14, 91, 173, 0.5);
+  }
+
+  .form-vote__input:focus {
+    box-shadow: 1px 1px 3px rgba(14, 91, 173, 0.5), inset 1px 1px 5px rgba(14, 91, 173, 0.5);
+  }
+
+  .form-vote__button-submit {
+    flex-shrink: 0;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 19px;
+    background-color: rgb(77, 114, 154);
+    color: white;
+    box-shadow: 0px 0px 0px 0px rgb(77, 114, 154);
+    transition: box-shadow 0.2s;
+  }
+
+  .form-vote__button-submit:hover {
+    box-shadow: 1px 1px 10px rgba(14, 91, 173, 0.5);
+  }
+
+  .form-vote__button-submit:active {
+    transition: box-shadow 0.1s;
+    box-shadow: 1px 1px 3px rgba(14, 91, 173, 0.5), inset 1px 1px 5px rgba(6, 37, 71, 0.7);
+  }
+  /* /Секция с информацией о фильме */
+/* /Подробная информация о фильме */
+
+
+/* Ошибка 404 */
+.error {
+  margin-top: 100px;
+}
+
+.error__404 {
+  display: block;
+  margin: auto;
+  max-width: 600px;
+  width: 100%;
+  /* height: 100%; */
+}
+/* /Ошибка 404 */
+
+.show-error {
+  display: inline;
+}

@@ -1,0 +1,112 @@
+@keyframes bkgr-image1--slide-right {
+  from {
+    transform: translateX(1382px);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+@keyframes bkgr-image2--slide-bottom {
+  from {
+    transform: translateY(610px);;
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+@keyframes bkgr-text--slide-bottom {
+  from {
+    transform: translateY(706px);;
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+@keyframes save-life-button--slide-left {
+  from {
+    transform: translateX(-300px);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+@keyframes how-help-buttons--slide-bottom {
+  from {
+    transform: translateY(400px);
+  }
+
+  to {
+    transform: none;
+    visibility: visible;
+  }
+}
+
+@keyframes how-help-buttons--animation-hover {
+  from {
+    background-size: 0% 0%;
+  }
+
+  to {
+    background-size: 150% 150%;
+  }
+}
+
+@keyframes how-help-buttons--animation-active {
+  from {
+    background-size: 0% 0%;
+  }
+
+  to {
+    background-size: 150% 150%;
+  }
+}
+
+@keyframes pet-cards--appearance {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+    visibility: visible;
+  }
+}
+
+@keyframes news--slide-left {
+  from {
+    transform: translateX(-1350px);
+  }
+
+  to {
+    transform: none;
+    visibility: visible;
+  }
+}
+
+@keyframes buttons--animation-hover {
+  from {
+    background-size: 0% 0%;
+  }
+
+  to {
+    background-size: 500% 500%;
+  }
+}
+
+@keyframes buttons--animation-active {
+  from {
+    background-size: 0% 0%;
+  }
+
+  to {
+    background-size: 500% 500%;
+  }
+}

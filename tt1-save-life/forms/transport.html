@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link href="../stylesheets/normalize.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets/fonts.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets/forms__transport.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets/animation.css" rel="stylesheet" type="text/css">
+    <title>Автопомощь</title>
+  </head>
+  <body>
+    <header>
+    </header>
+
+    <main class="transport">
+      <form class="transport__form transport-form" name="form">
+        <h3 class="transport-form__title-h3">Автопомощь</h3>
+        <hr class="transport-form__delimeter">
+        <h4 class="transport-form__title-h4">Заявка</h4>
+        <p class="transport-form__text">Отправьте нам заявку о том, что готовы помочь. 
+          Когда нам будет необходима помощь в 
+          транспортировке, мы позвоним вам.</p>
+        <label class="transport-form__label label-full-name" for=id-full-name>Фамилия и имя</label>
+        <input class="transport-form__input"
+          type="text"
+          name="full-name"
+          id="id-full-name"
+          placeholder="Введите ваше имя и фамилию"
+          minlength="2"
+          maxlength="56"
+          autofocus>
+        <label class="transport-form__label label-phone" for=id-phone>Номер телефона (только белорусский номер)</label>
+        <input class="transport-form__input"
+          type="tel"
+          name="phone"
+          id="id-phone"
+          placeholder="Введите ваш номер телефона"
+          minlength="13"
+          maxlength="13"
+          required>
+        <label class="transport-form__label label-phone-warning" for="id-phone">Обязательное поле для заполнения</label>
+        <label class="transport-form__label label-remarks" for="id-remarks">Замечания</label>
+        <textarea class="transport-form__textarea"
+          name="remarks"
+          id="id-remarks"
+          placeholder="Опишите, как вы сможете нам помочь и удобное время для вас"
+          maxlength="500"></textarea>
+        <div class="transport-form__buttons transport-button">
+          <input class="transport-button__submit" type="submit" name="submit" id="id-submit" value="Отправить заявку">
+          <button class="transport-button__cancel">Отмена</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+    </footer>
+  </body>
+</html>
+
+
+<!-- Чекербоксы для более-высокой сложности -->
+<!-- <div class="transport-form__help-type help-type">
+  <p class="help-type__text">Выберите вид автопомощи</p>
+  <input class="help-type__checkbox"
+    type="checkbox"
+    name="checkbox"
+    id="id-checkbox-1"
+    checked>
+  <label class="help-type__label" for="id-checkbox-1">Доставка еды, медикаментов и других небольших вещей</label>
+  <input class="help-type__checkbox"
+    type="checkbox"
+    name="checkbox"
+    id="id-checkbox-2">
+  <label class="help-type__label" for="id-checkbox-2">Доставка сена или соломы, строительных материлов 
+    для будок и других крупногабаритных вещей</label>
+  <input class="help-type__checkbox"
+    type="checkbox"
+    name="checkbox"
+    id="id-checkbox-3">
+  <label class="help-type__label" for="id-checkbox-3">Транспортировка небольших собак и котов</label>
+  <input class="help-type__checkbox"
+    type="checkbox"
+    name="checkbox"
+    id="id-checkbox-4">
+  <label class="help-type__label" for="id-checkbox-4">Транспортировка больших собак</label>
+</div> -->

@@ -1,0 +1,718 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: "Gilroy", "serif";
+  color: #242424;
+  background-color: #F6F6F6;
+}
+
+.main__ward-animals {
+  overflow: hidden;
+  width: 1366px;
+  margin: 0 auto;
+}
+
+/* Верхняя часть */
+.ward-animals__top-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1146px;
+  min-height: 40px;
+  margin: 40px 110px 0 110px;
+}
+
+.top-content__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #6b6b6b;
+}
+
+.top-content__link:hover {
+  color: #242424;
+}
+
+.top-content__link:active {
+  color:#6b6b6b;
+}
+
+.top-content__link:focus {
+  outline: none;
+}
+
+.top-content__link:focus-visible {
+  outline: 2px solid #6b6b6b;
+}
+
+.top-content__image {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border: 4px solid #ffc41e;
+  border-radius: 50%;
+  background-color: #ffc41e;
+}
+
+.top-content__title {
+  margin-left: 54px;
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+  color: #242424;
+}
+
+.pets-sort__label {
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #6b6b6b;
+}
+
+.pets-sort__menu {
+  width: 168px;
+  height: 40px;
+  margin-left: 5px;
+  padding-left: 11px;
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  color: #6b6b6b;
+}
+
+.pets-sort__menu:hover {
+  border: 1px solid #ffc41e;
+}
+
+.pets-sort__menu:focus {
+  outline: none;
+  border: 1px solid #ffc41e;
+  box-shadow: 0 0 0 2px rgba(255, 196, 30, 0.25);
+}
+
+.pets-sort__menu:disabled {
+  background-color: #f2f2f2;
+  color: #b3b3b3;
+  border: none;
+}
+
+.pets-sort__item:nth-of-type(2n) {
+  background-color: #f8f8fa;
+}
+/* /Верхняя часть */
+
+
+/* Карточки питомцев */
+.ward-animals__cards {
+  display: flex;
+  flex-direction: column;
+  width: 1145px;
+  margin: 37px 110px 0 110px;
+}
+
+.pet-cards__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1145px;
+}
+
+.pet-list__item {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  width: 368px;
+  height: 695px;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  background-color: white;
+  animation: pet-cards--appearance 1s forwards;
+}
+
+.pet-list__item:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.pet-list__item:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.pet-list__item:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.pet-list__item:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.pet-list__item:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.pet-list__item:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.pet-list__item:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.pet-list__item:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.pet-list__item:nth-child(10) {
+  animation-delay: 0.9s;
+}
+.pet-list__item:nth-child(11) {
+  animation-delay: 1s;
+}
+.pet-list__item:nth-child(12) {
+  animation-delay: 1.1s;
+}
+
+.pet-list__item:nth-child(n+4) {
+  margin-top: 44px;
+}
+
+.pet-list__card {
+  height: 555px;
+}
+
+.pet-list__image {
+  margin-top: 15px;
+  margin-left: 16px;
+}
+
+.pet-list__title {
+  text-align: center;
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  color: #242424;
+}
+
+.pet-list__delimeter {
+  height: 1px;
+  margin: 6px 15px 0 16px;
+  border: none;
+  background-color: #d6d6d6;
+}
+
+.pet-list__text {
+  margin: 6px 15px 0 16px;
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #242424;
+}
+
+.pet-list__text--gray-color {
+  margin-top: 8px;
+  color: #6b6b6b;
+}
+
+.pet-list__button {
+  width: 209px;
+  height: 42px;
+  margin: 18px auto 0 auto;
+  padding: 0 10px;
+  border: none;
+  border-radius: 58px;
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #242424;
+  background-color: #fbc832;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.pet-list__button:hover {
+  box-shadow: 0 2px 4px #cccccc;
+  background-image: radial-gradient(circle, #ffdf86 20%, transparent 20%);
+  color: black;
+  animation: buttons--animation-hover 0.3s forwards;
+  transition: box-shadow 0.3s;
+}
+
+.pet-list__button:active {
+  box-shadow: none;
+  background-image: radial-gradient(circle, #ffbb0c 20%, transparent 20%);
+  color: black;
+  animation: buttons--animation-active 0.3s forwards;
+}
+
+.pet-list__button:disabled {
+  background-color: #ffe28e;
+  color: #6b6b6b;
+}
+
+.pet-list__button:focus {
+  outline: none;
+}
+
+.pet-list__button:focus-visible {
+  border: 3px solid #6b6b6b;
+}
+
+.pet-list__button--alt-style {
+  width: 296px;
+  margin-top: 17px;
+  padding: 0 10px;
+  border: 2px solid #FFC41E;
+  background-color: unset;
+}
+
+.pet-list__button--alt-style:hover {
+  border: 3px solid #ffbc00;
+  box-shadow: 0 2px 4px #cccccc;
+  background-image: radial-gradient(circle, #ffffff 20%, transparent 20%);
+  color: black;
+  animation: buttons--animation-hover 0.3s forwards;
+  transition: box-shadow 0.3s;
+}
+
+.pet-list__button--alt-style:active {
+  border: 3px solid #ffbc00;
+  box-shadow: none;
+  background-image: radial-gradient(circle, rgba(255, 196, 30, 0.2) 20%, transparent 20%);
+  color: #242424;
+  animation: buttons--animation-active 0.3s forwards;
+}
+
+.pet-list__button--alt-style:disabled {
+  border: 3px solid #b3b3b3;
+  background-color: unset;
+  color: #6b6b6b;
+}
+
+/* Переход по ссылкам к формам
+Удалить после добавления модальных окон */
+.pet-list__link {
+  text-decoration: none;
+  color: #242424;
+}
+
+.pet-list__link:focus {
+  outline: none;
+}
+/* /Карточки питомцев */
+
+
+/* Footer */
+.footer {
+  overflow: hidden;
+  min-height: 117px;
+  width: 1366px;
+  margin: 0 auto;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1146px;
+  margin: 33px 110px 0 110px;
+}
+
+.footer-content__navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 876px;
+  margin-left: 5px;
+}
+
+.footer-nav__item {
+  list-style-type: none;
+}
+
+.footer-nav__link {
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #474747;
+}
+
+.footer-nav__link:hover {
+  color: #ad7f00;
+}
+
+.footer-nav__link:focus {
+  outline: none;
+}
+
+.footer-nav__link:focus-visible {
+  outline: 2px solid #6b6b6b;
+}
+
+.footer-content__info {
+  display: flex;
+  justify-content: space-between;
+  width: 143px;
+}
+
+.footer-info__item {
+  list-style-type: none;
+}
+
+.footer-info__link {
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #242424;
+}
+
+.footer-info__link:hover {
+  color: #ad7f00;
+}
+
+.footer-info__link:focus {
+  outline: none;
+}
+
+.footer-info__link:focus-visible {
+  outline: 2px solid #6b6b6b;
+}
+
+.footer-content__text {
+  flex-grow: 1;
+  margin-top: 26px;
+  text-align: center;
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 17px;
+  color: #b3b3b3;
+}
+/* /Footer */
+
+
+/* ---------------------------------------------------------- */
+
+@media (max-width: 1269px) {
+  .main__ward-animals {
+    width: 1024px;
+  }
+
+  /* Верхняя часть */
+  .ward-animals__top-content {
+    width: 804px;
+    min-height: 40px;
+    margin: 40px 110px 0 110px;
+  }
+
+  .top-content__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  /* /Верхняя часть */
+
+
+  /* Карточки питомцев */
+  .ward-animals__cards {
+    width: 804px;
+    margin: 35px 110px 0 110px;
+  }
+
+  .pet-list__item:nth-child(n+3) {
+    margin-top: 44px;
+  }
+  /* /Карточки питомцев */
+
+
+  /* Footer */
+  .footer {
+    width: 1024px;
+    min-height: 111px;
+  }
+
+  .footer__content {
+    width: 804px;
+    margin: 33px 110px 0 110px;
+  }
+
+  .footer-content__navigation {
+    width: 803px;
+    margin-left: 0;
+  }
+
+  .footer-content__info {
+    width: 122px;
+    margin-top: 23px;
+  }
+  
+  .footer-content__text {
+    text-align: right;
+  }
+  /* /Footer */
+}
+
+
+/* ---------------------------------------------------------- */
+
+
+@media (max-width: 1023px) {
+  /* Верхняя часть */
+  .main__ward-animals {
+    width: 768px;
+  }
+
+  .ward-animals__top-content {
+    width: 548px;
+    min-height: 40px;
+    margin: 99px 110px 0 110px;
+  }
+
+  .top-content__title {
+    position: absolute;
+    top: -53px;
+    left: 114px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  /* /Верхняя часть */
+
+
+  /* Карточки питомцев */
+  .ward-animals__cards {
+    width: 368px;
+    margin: 40px 200px 0 200px;
+  }
+
+  .pet-list__item:nth-child(n+2) {
+    margin-top: 44px;
+  }
+  /* /Карточки питомцев */
+
+
+  /* Footer */
+  .footer {
+    width: 768px;
+    min-height: 181px;
+  }
+
+  .footer__content {
+    width: 548px;
+    margin-top: 33px;
+  }
+
+  .footer-content__navigation {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 389px;
+    height: 92px;
+  }
+
+  .footer-nav__item:nth-child(n+2):not(:nth-child(4)) {
+    margin-top: 19px;
+  }
+
+  .footer-nav__item:nth-child(n+4) {
+    margin-left: 53px;
+  }
+
+  .footer-content__info {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 61px;
+    margin-top: 0px;
+    text-align: right;
+  }
+
+  .footer-info__item:nth-child(n+2) {
+    margin-top: 18px;
+  }
+
+  .footer-content__text {
+    margin-top: 22px;
+    text-align: center;
+  }
+  /* /Footer */
+}
+
+
+/* ---------------------------------------------------------- */
+
+
+@media (max-width: 767px) {
+  /* Верхняя часть */
+  .main__ward-animals {
+    width: 640px;
+  }
+
+  .ward-animals__top-content {
+    width: 580px;
+    min-height: 40px;
+    margin: 72px 30px 0 30px;
+  }
+
+  .top-content__title {
+    position: absolute;
+    top: -48px;
+    left: 148px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  /* /Верхняя часть */
+
+
+  /* Карточки питомцев */
+  .ward-animals__cards {
+    width: 300px;
+    margin: 24px 170px 0 170px;
+  }
+
+  .pet-list__item {
+    width: 300px;
+    height: 613px;
+  }
+
+  .pet-list__item:nth-child(n+2) {
+    margin-top: 30px;
+  }
+
+  .pet-list__card {
+    height: 497px;
+  }
+
+  .pet-list__image {
+    width: 272px;
+    height: 284px;
+    margin-top: 14px;
+    margin-left: 14px;
+  }
+
+  .pet-list__title {
+    margin-top: 2px;
+  }
+
+  .pet-list__delimeter {
+    margin: 1px 14px 0 14px;
+  }
+
+  .pet-list__text {
+    margin: 4px 14px 0 14px;
+  }
+
+  .pet-list__button {
+    width: 174px;
+    height: 30px;
+    margin-top: 17px;
+    font-size: 18px;
+  }
+
+  .pet-list__button--alt-style {
+    width: 242px;
+    margin-top: 20px;
+  }
+  /* /Карточки питомцев */
+
+
+  /* Footer */
+  .footer {
+    width: 640px;
+    min-height: 261px;
+  }
+
+  .footer__content {
+    width: 382px;
+    margin: 35px auto 0 auto;
+  }
+
+  .footer-content__navigation {
+    width: 228px;
+    height: 166px;
+  }
+
+  .footer-nav__item:nth-child(n+2) {
+    margin-top: 19px;
+  }
+
+  .footer-nav__item:nth-child(n+4) {
+    margin-left: 0;
+  }
+
+  .footer-content__text {
+    margin-top: 26px;
+  }
+  /* /Footer */
+}
+
+
+/* ---------------------------------------------------------- */
+
+
+@media (max-width: 639px) {
+  /* Верхняя часть */
+  .main__ward-animals {
+    width: 360px;
+  }
+
+  .ward-animals__top-content {
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 273px;
+    min-height: 88px;
+    margin: 24px 57px 0 30px;
+  }
+
+  .top-content__link span {
+    display: none;
+  }
+
+  .top-content__title {
+    position: static;
+    margin-left: 29px;
+    margin-right: 35px;
+  }
+
+  .pets-sort__menu {
+    margin-top: 23px;
+  }
+  /* /Верхняя часть */
+
+
+  /* Карточки питомцев */
+  .ward-animals__cards {
+    width: 300px;
+    margin: 24px 30px 0 30px;
+  }
+  /* /Карточки питомцев */
+
+
+  /* Footer */
+  .footer {
+    width: 360px;
+  }
+
+  .footer__content {
+    width: 300px;
+  }
+  /* /Footer */
+}

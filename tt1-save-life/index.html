@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link href="./stylesheets/normalize.css" rel="stylesheet" type="text/css">
+    <link href="./stylesheets/fonts.css" rel="stylesheet" type="text/css">
+    <link href="./stylesheets/styles.css" rel="stylesheet" type="text/css">
+    <link href="./stylesheets/media.css" rel="stylesheet" type="text/css">
+    <link href="./stylesheets/animation.css" rel="stylesheet" type="text/css">
+    <title>Приют для бездомных животных</title>
+  </head>
+  <body>
+    <div class="background">
+      <picture class="background__picture first-picture">
+        <source srcset="./images/jpg/top-bckgrnd__dog-225w.jpg" media="(max-width: 639px)">
+        <source srcset="./images/jpg/top-bckgrnd__dog-312w.jpg" media="(max-width: 767px)">
+        <source srcset="./images/jpg/top-bckgrnd__dog-344w.jpg" media="(max-width: 1023px)">
+        <source srcset="./images/jpg/top-bckgrnd__dog-504w.jpg" media="(max-width: 1269px)">
+        <img class="first-picture__image"
+          src="./images/jpg/top-bckgrnd__dog-718w.jpg"
+          alt="Пушистый рыжий пудель, с ожиданием смотрит вверх">
+      </picture>
+      <picture class="background__picture second-picture">
+        <source srcset="./images/png/top-bckgrnd__cat-165w.png" media="(max-width: 767px)">
+        <source srcset="./images/png/top-bckgrnd__cat-235w.png" media="(max-width: 1023px)">
+        <source srcset="./images/png/top-bckgrnd__cat-344w.png" media="(max-width: 1269px)">
+        <img class="second-picture__image"
+          src="./images/png/top-bckgrnd__cat-483w.png"
+          alt="Полосатый рыжий кот, с прищуренным левым глазом смотрит на Вас">
+      </picture>
+      <div class="background__text">
+        <img class="background__image background__image--position-text1"
+          src="./images/svg/decor-txt__i-will-be.svg"
+          alt="Я буду">
+        <img class="background__image background__image--position-text2"
+          src="./images/svg/decor-txt__the-best.svg"
+          alt="лучшим">
+        <img class="background__image background__image--position-text3"
+          src="./images/svg/decor-txt__friend.svg"
+          alt="другом">
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="header__content header-content">
+        <img class="header-content__burger-menu-image"
+          src="./images/svg/icon__burger.svg"
+          alt=""
+          tabindex="0">
+        <nav class="header-content__navigation header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#how-help">Как помочь</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#ward-animals">Подопечные животные</a>
+            </li>
+          </ul>
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#about-us">О нас</a>
+            </li>
+            <li class="header-nav__item header-nav__item--reset-margin">
+              <a class="header-nav__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-content__social header-social">
+          <li class="header-social__item">
+            <a class="header-social__link" href="https://vk.com/animalsgrodno">
+              <img class="header-social__image" src="./images/svg/icon__vk-white.svg" alt="иконка ВКонтакте">
+            </a>
+          </li>
+          <li class="header-social__item">
+            <a class="header-social__link" href="https://www.instagram.com/animalsgrodno/">
+              <img class="header-social__image" src="./images/svg/icon__instagram-white.svg" alt="иконка Инстаграм">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="main__save-life save-life">
+        <div class="save-life__content">
+          <h1 class="save-life__title">СПАСИ ЖИЗНЬ</h1>
+          <p class="save-life__text save-life__text--text-light">Благотворительное общественное объединение защиты животных</p>
+          <p class="save-life__text save-life__text--text-bold">Наша цель: помощь бездомным животным. Также мы поддерживаем хвостиков,
+            которые оказались в пункте отлова и временного содержания в Гродно.</p>
+          <p class="save-life__text save-life__text--modify-text">У животных, находящихся в пункте 
+            отлова и временного содержания 
+            бродячих животных, есть всего 
+            несколько дней до усыпления...</p>
+          <div class="save-life__wrapper-button">
+            <a class="save-life__link" href="#how-help">Хочу помочь</a>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="main__description description">
+        <div class="description__content description-content">
+          <div class="description-content__images">
+            <img class="description-content__img description-content__img--img1-modify"
+              src="./images/jpg/description__dog.jpg"
+              alt="Черная собака подаёт лапу через решетку своего вольера">
+            <img class="description-content__img description-content__img--img2-modify"
+              src="./images/jpg/description__cat.jpg"
+              alt="Грустный, серый кот смотрит сквозь прутья своей клетки">
+          </div>
+          <div class="description-content__text-list"> <!-- section? -->
+            <h3 class="description-content__title">Тут большие добрые сердца помогают жить маленьким сердечкам</h3>
+            <p class="description-content__text description-content__text--text1-margin">Ежедневно в пункт временного содержания, путём отлова, 
+              попадают безнадзорные собаки и коты. По закону, у 
+              животных находящихся в САХе есть всего лишь несколько 
+              дней, чтобы найти прежнего или обрести нового хозяина. В 
+              противном случае невостребованных животных ждёт 
+              УСЫПЛЕНИЕ! Здесь вы сможете найти своего как 
+              потерявшегося, так и нового верного друга!</p>
+            <p class="description-content__text description-content__text--text2-margin">Если нет возможности забрать хвостика, вы можете помочь 
+              нам финансово или другой материальной помощью. Еще нам 
+              всегда нужны добрые и отзывчивые люди - волонтеры, без 
+              вас очень трудно!</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="main__how-help how-help">
+        <div class="how-help__content">
+          <h3 class="how-help__title" id="how-help">Как помочь?</h3>
+          <ul class="how-help__list">
+            <li class="how-help__item">
+              <a href="#taming" class="how-help__link">
+                <img class="how-help__img" src="./images/svg/anchor__taming.svg" alt="">
+              </a>
+              <p class="how-help__text">Дать хвостику дом или взять на передержку</p>
+            </li>
+            <li class="how-help__item">
+              <a href="#help-fund" class="how-help__link">
+                <img class="how-help__img" src="./images/svg/anchor__fund.svg" alt="">
+              </a>
+              <p class="how-help__text">Перечислить деньги в фонд помощи</p>
+            </li>
+            <li class="how-help__item">
+              <a href="#help-items" class="how-help__link">
+                <img class="how-help__img" src="./images/svg/anchor__items.svg" alt="">
+              </a>
+              <p class="how-help__text">Привезти корм, лекарства или другие вещи</p>
+            </li>
+            <li class="how-help__item">
+              <a href="#help-transport" class="how-help__link">
+                <img class="how-help__img" src="./images/svg/anchor__transport.svg" alt="">
+              </a>
+              <p class="how-help__text">Доставить животным еду или отвезти в больницу</p>
+            </li>
+            <li class="how-help__item">
+              <a href="#help-volunteer" class="how-help__link">
+                <img class="how-help__img" src="./images/svg/anchor__volunteer.svg" alt="">
+              </a>
+              <p class="how-help__text">Выгуливать, кормить, мыть или лечить хвостиков</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+
+      <section class="main__taming taming">
+        <div class="taming__image-wrapper">
+          <img class="taming__image" src="./images/svg/decor-img__taming.svg" alt="">
+        </div>
+        <div class="taming__content taming-content">
+          <div class="taming-content__text-list taming-text-list">
+            <div class="taming-text-list__text-wrapper"> <!-- section? -->
+              <h3 class="taming-text-list__title" id="taming">Дом и любовь для хвостика</h3>
+              <p class="taming-text-list__text">Самая большая помощь - это спасти жизнь 
+                животному, забрать домой, или помочь хвостику с 
+                поиском дома. У наших подопечных очень мало 
+                времени. Рассказывайте друзья и и знакомым о 
+                наших хвостиках, возможно кому-то нужен будет 
+                именно такой друг.</p>
+            </div>
+            <div class="taming-text-list__text-wrapper"> <!-- section? -->
+              <h3 class="taming-text-list__title">Передержка</h3>
+              <p class="taming-text-list__text taming-text-list__text--margin">Когда животных ждет скорое усыпление, очень 
+                важно найти ему дом. Но пока дом и новые или 
+                старые хозяева разыскиваются, хвостику нужно 
+                где-то жить. Вы можете забрать к себе домой 
+                животных на время. Волонтеры, в свою очередь, 
+                обязательно помогут с поиском нового дома.</p>
+            </div>
+          </div>
+          <div class="taming-content__cards pet-cards"> <!-- section? -->
+            <h3 class="pet-cards__title" id="ward-animals">Наши подопечные</h3>
+            <ul class="pet-cards__list pet-list">
+              <li class="pet-list__item">
+                <!-- Сомневался по поводу карточек в виде article.
+                  Возможно вариант (figure > article) и (figcaption > div) будет более правильным -->
+                <figure class="pet-list__card">
+                  <img class="pet-list__image" 
+                    src="./images/jpg/pet-list__image1.jpg" 
+                    alt="Маленький бело-рыжий щенок на руках у девушки в желтом свитере.">
+                  <figcaption class="pet-list__description">
+                    <h4 class="pet-list__title">Моник</h4>
+                    <hr class="pet-list__delimeter">
+                    <p class="pet-list__text pet-list__text--gray-color">Мальчик, 7 месяцев</p>
+                    <p class="pet-list__text">К поводку приучен. Не агрессивный. В еде не 
+                      привередничает. С другими животными не 
+                      конфликтует. Привит. Очень плачет и хочет на 
+                      ручки. Отдается только в добрые руки и под 
+                      паспорт.</p>
+                  </figcaption>
+                </figure>
+                <!-- Ссылки внутри кнопок уберутся после добавления модальных окон -->
+                <button class="pet-list__button">
+                  <a class="pet-list__link" tabindex="-1" href="./forms/taming.html">Забрать домой</a>
+                </button>
+                <button class="pet-list__button pet-list__button--alt-style">
+                  <a class="pet-list__link" tabindex="-1" href="./forms/overexposure.html">Забрать на передержку</a>
+                </button>
+              </li>
+              <li class="pet-list__item">
+                <figure class="pet-list__card">
+                  <img class="pet-list__image"
+                    src="./images/jpg/pet-list__image2.jpg"
+                    alt="Бело-жёлто-чёрная кошка смотрит снизу в объектив камеры.">
+                  <figcaption class="pet-list__description">
+                    <h4 class="pet-list__title">Лунатик</h4>
+                    <hr class="pet-list__delimeter">
+                    <p class="pet-list__text pet-list__text--gray-color">Мальчик, 7 месяцев</p>
+                    <p class="pet-list__text">Она не знает, что такое – царапаться и кусаться, 
+                      она не знает, что такое нападать на других 
+                      животных.</p>
+                  </figcaption>
+                </figure>
+                <button class="pet-list__button">
+                  <a class="pet-list__link" tabindex="-1" href="./forms/taming.html">Забрать домой</a>
+                </button>
+                <button class="pet-list__button pet-list__button--alt-style">
+                  <a class="pet-list__link" tabindex="-1" href="./forms/overexposure.html">Забрать на передержку</a>
+                </button>
+              </li>
+              <li class="pet-list__item">
+                <figure class="pet-list__card">
+                  <img class="pet-list__image"
+                    src="./images/jpg/pet-list__image3.jpg"
+                    alt="Черно-рыжая собака с интересом и вопросом смотрит в объектив камеры.">
+                  <figcaption class="pet-list__description">
+                    <h4 class="pet-list__title">Герда</h4>
+                    <hr class="pet-list__delimeter">
+                    <p class="pet-list__text pet-list__text--gray-color">Мальчик, 7 месяцев</p>
+                    <p class="pet-list__text">К поводку приучен. Не агрессивный. В еде не 
+                      привередничает. С другими животными не 
+                      конфликтует. Привит. Очень плачет и хочет на 
+                      ручки. Отдается только в добрые руки и под 
+                      паспорт.</p>
+                  </figcaption>
+                </figure>
+                <button class="pet-list__button">
+                  <a class="pet-list__link" tabindex="-1" href="./forms/taming.html">Забрать домой</a>
+                </button>
+                <button class="pet-list__button pet-list__button--alt-style">
+                  <a class="pet-list__link" tabindex="-1" href="./forms/overexposure.html">Забрать на передержку</a>
+                </button>
+              </li>
+              <li class="pet-list__item">
+                <figure class="pet-list__card">
+                  <img class="pet-list__image"
+                    src="./images/jpg/pet-list__image4.jpg"
+                    alt="Пушистый бело-серый кот смотрит сквозь прутья клетки.">
+                  <figcaption class="pet-list__description">
+                    <h4 class="pet-list__title">Саки</h4>
+                    <hr class="pet-list__delimeter">
+                    <p class="pet-list__text pet-list__text--gray-color">Мальчик, 7 месяцев</p>
+                    <p class="pet-list__text">Веселый и очень игривый, ему так нужны ваша 
+                      любовь и ласка.У него потрясающая густая 
+                      шерсть в полосочку, «серьезные» желтые глаза и 
+                      длиннющие белые усы.</p>
+                  </figcaption>
+                </figure>
+                <button class="pet-list__button">
+                  <a class="pet-list__link" tabindex="-1" href="./forms/taming.html">Забрать домой</a>
+                </button>
+                <button class="pet-list__button pet-list__button--alt-style">
+                  <a class="pet-list__link" tabindex="-1" href="./forms/overexposure.html">Забрать на передержку</a>
+                </button>
+              </li>
+              <li class="pet-list__item">
+                <figure class="pet-list__card">
+                  <img class="pet-list__image"
+                    src="./images/jpg/pet-list__image5.jpg"
+                    alt="Маленькая собачка коричневого цвета сидит на белом диване.">
+                  <figcaption class="pet-list__description">
+                    <h4 class="pet-list__title">Моника</h4>
+                    <hr class="pet-list__delimeter">
+                    <p class="pet-list__text pet-list__text--gray-color">Девочка, 4 месяца</p>
+                    <p class="pet-list__text">Девочке 4 месяца жила в ужасных условиях, 
+                      бывшая хозяйка могла исчезнуть на двое суток 
+                      закрыв её одну в комнате без еды, ей нельзя там 
+                      больше оставаться. Мила очень ласковая, 
+                      забавная, в еде не привередлива.</p>
+                  </figcaption>
+                </figure>
+                <button class="pet-list__button">
+                  <a class="pet-list__link" tabindex="-1" href="./forms/taming.html">Забрать домой</a>
+                </button>
+                <button class="pet-list__button pet-list__button--alt-style">
+                  <a class="pet-list__link" tabindex="-1" href="./forms/overexposure.html">Забрать на передержку</a>
+                </button>
+              </li>
+              <li class="pet-list__item">
+                <figure class="pet-list__card">
+                  <img class="pet-list__image"
+                    src="./images/jpg/pet-list__image6.jpg"
+                    alt="Рыже-черная собака валяясь на земле пытается облизать протянутую ей руку.">
+                  <figcaption class="pet-list__description">
+                    <h4 class="pet-list__title">Андреантино</h4>
+                    <hr class="pet-list__delimeter">
+                    <p class="pet-list__text pet-list__text--gray-color">Мальчик, 7 месяцев</p>
+                    <p class="pet-list__text">Веселый и очень игривый, ему так нужны ваша 
+                      любовь и ласка.У него потрясающая густая 
+                      шерсть в полосочку, «серьезные» желтые глаза и 
+                      длиннющие белые усы.</p>
+                  </figcaption>
+                </figure>
+                <button class="pet-list__button">
+                  <a class="pet-list__link" tabindex="-1" href="./forms/taming.html">Забрать домой</a>
+                </button>
+                <button class="pet-list__button pet-list__button--alt-style">
+                  <a class="pet-list__link" tabindex="-1" href="./forms/overexposure.html">Забрать на передержку</a>
+                </button>
+              </li>
+            </ul>
+            <a class="pet-cards__link" href="pets.html">
+              Посмотреть всех (157)<img class="pet-cards__image" src="./images/svg/icon__look-all.svg" alt="">
+            </a>
+          </div>
+          <div class="taming-content__social taming-social">
+            <p class="taming-social__text">Помочь быстрее пристроить хвостиков можно путем размещения 
+              наших постов у себя в соц сетях. Переходите на наши странички.</p>
+            <ul class="taming-social__list">
+              <li class="taming-social__item">
+                <a class="taming-social__link" href="https://vk.com/animalsgrodno">
+                  <img class="taming-social__image" src="./images/svg/icon__vk-yellow.svg" alt="Ссылка на канал ВКонтакте">
+                </a>
+              </li>
+              <li class="taming-social__item">
+                <a class="taming-social__link" href="https://www.instagram.com/animalsgrodno/">
+                  <img class="taming-social__image" src="./images/svg/icon__instagram-yellow.svg" alt="Ссылка на канал Инстаграм">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="main__help-fund help-fund">
+        <div class="help-fund__image-wrapper">
+          <img class="help-fund__image" src="./images/svg/decor-img__fund.svg" alt="">
+        </div>
+        <div class="help-fund__content fund-content">
+          <h3 class="fund-content__title" id="help-fund">Финансовая поддержка</h3>
+          <p class="fund-content__text">Такая помощь необходима для оплаты стерилизации, прививок, лечения больных 
+            животных, покупка корма и других жизненно необходимых вещей.</p>
+          <div class="fund-content__wrapper">
+            <div class="fund-content__bank bank-details"> <!-- section? -->
+              <h3 class="bank-details__title">Расчетный счет в Банке</h3>
+              <ul class="bank-details__list">
+                <li class="bank-details__item">БООЗЖ "СПАСИ ЖИЗНЬ"</li>
+                <li class="bank-details__item">УНП: 590375680</li>
+                <li class="bank-details__item"><strong>Текущий (расчетный) счет в BYN:</strong></li>
+                <li class="bank-details__item">BY13ALFA30152555460010270000</li>
+                <li class="bank-details__item">ЗАО 'Альфа-Банк'</li>
+                <li class="bank-details__item">БИК: ALFABY2X</li>
+              </ul>
+              <a class="bank-details__link" href="https://express-pay.by/">Быстрый платёж</a>
+            </div>
+            <div class="fund-content__fund-boxes fund-boxes"> <!-- section? -->
+              <h3 class="fund-boxes__title">Коробочки в городе</h3>
+              <ol class="fund-boxes__list">
+                <li class="fund-boxes__item">Наши коробочки для пожертвований в г. Гродно:</li>
+                <li class="fund-boxes__item">1. Зоомаркет «Зообазар», ул. Комарова, 26а;</li>
+                <li class="fund-boxes__item">2. Учебный корпус ГГАУ,&nbsp; ул. Волковича, 1;</li>
+                <li class="fund-boxes__item">3. Парикмахерская «ПРИМАДОННА», ул. Гоголя, 11;</li>
+                <li class="fund-boxes__item">4. Зоомаркет «Зообазар» ул. Пушкина, 31а;</li>
+                <li class="fund-boxes__item">5. Гипермаркет «Евроопт», ул. Тимирязева, 8;</li>
+                <li class="fund-boxes__item">6. Гипермаркет «Евроопт», ул. Янки Купалы, 82А;</li>
+                <li class="fund-boxes__item">7. Фитнес-центр «АДРЕНАЛИН», ул. Подольная, д.37.</li>
+              </ol>
+              <!-- Ссылка на карту не реализована (пока не понятно как её делать) -->
+              <a class="fund-boxes__link" href="">Посмотреть на карте</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="main__help-items help-items">
+        <div class="help-items__image-wrapper">
+          <img class="help-items__image" src="./images/svg/decor-img__items.svg" alt="">
+        </div>
+        <div class="help-items__content items-content">
+          <div class="items-content__feed items-feed">
+            <h3 class="items-feed__title" id="help-items">Корма</h3>
+            <ul class="items-feed__list">
+              <li class="items-feed__item">Можно помочь с покупкой и доставкой еды для хвостатых:</li>
+              <li class="items-feed__item">• Быстроразваривающиеся <strong>крупы:</strong> дроблёная гречка, овсянка, сечка, 
+                овсяные/гречневые хлопья, не требующие варки;</li>
+              <li class="items-feed__item">• <strong>Сухие и влажные корма</strong> для собак и котов (кроме Рекс и Petboom)</li>
+              <li class="items-feed__item">• <strong>Фарш для собак</strong>, "БОБИКИ" и др.</li>
+              <li class="items-feed__item items-feed__item--font-gray">Вы можете помочь в приготовлении каш и их доставке!</li>
+            </ul>
+          </div>
+          <div class="items-content__medicines item-medicines">
+            <h3 class="item-medicines__title">Лекарства</h3>
+            <p class="item-medicines__text">Нам необходимы препараты: <strong>цефтриаксон</strong> (флакон по 0,5 г); <strong>новокаин</strong> (раствор для 
+              инъекций); <strong>гискан</strong>; <strong>гамавит</strong>; <strong>катозал</strong>; <strong>антитокс фоспренил</strong>; <strong>энтеросгель</strong> (паста); 
+              <strong>препараты от глистов</strong>, <strong>блох</strong>, <strong>клещей</strong>, <strong>для заживления ран</strong>.</p>
+          </div>
+          <div class="items-content__other items-other">
+            <h3 class="items-other__title">Другие нужные вещи</h3>
+            <ul class="items-other__list">
+              <li class="items-other__item">Для содержания животных всегда необходимы:</li>
+              <li class="items-other__item">• Ошейники, поводки, намордники;</li>
+              <li class="items-other__item">• Опилки и солома в любом количестве;</li>
+              <li class="items-other__item">• Посуда для животных и для приготовления еды - миски, кастрюли, ножи, черпаки и др.);</li>
+              <li class="items-other__item">• Теплые вещи, лежаки для утепления и уюта животных;</li>
+              <li class="items-other__item">• Будки.</li>
+            </ul>
+          </div>
+          <!-- Маленькое модальное окно, пока реализовано в виде ссылки (будет кнопка) -->
+          <a class="items-content__link" href="./transfer-items.html">Кому и куда передать?</a>
+        </div>
+      </section>
+
+      
+      <section class="main__help-transport help-transport">
+        <div class="help-transport__image-wrapper">
+          <img class="help-transport__image" src="./images/svg/decor-img__transport.svg" alt="">
+        </div>
+        <div class="help-transport__content content-transport">
+          <h3 class="content-transport__title" id="help-transport">Автопомощь</h3>
+          <p class="content-transport__text">Важной помощью будет транспортировка. Необходимо отвозить животных в 
+            ветеринарную клинику в сопровождении нашего волонтера или привозить еду. Если у 
+            вас есть автомобиль, немного свободного времени и доброе сердце - будем вам рады.</p>
+          <!-- Переход пока реализован ссылкой, в будущем будет кнопка открывающая модальное окно -->
+          <a class="content-transport__link" href="./forms/transport.html">Оставить заявку</a>
+        </div>
+      </section>
+
+      
+      <section class="main__help-volunteer help-volunteer">
+        <div class="help-volunteer__image-wrapper">
+          <img class="help-volunteer__image" src="./images/svg/decor-img__volunteer.svg" alt="">
+        </div>
+        <div class="help-volunteer__content volunteer-content">
+          <div class="volunteer-content__image-wrapper">
+            <img class="volunteer-content__image"
+              src="./images/jpg/volunteer__dog.jpg"
+              alt="Рыже-чёрная собачка кусает розовую резиновую игрушку.">
+          </div>   
+          <div class="volunteer-content__text-list">
+            <h3 class="volunteer-content__title" id="help-volunteer">Волонтёрство</h3>
+            <div class="volunteer-content__text-block">
+              <p class="volunteer-content__text">Катастрофически не хватает добрых людей, которые готовы 
+                поделиться своим временем и окружить заботой животных. 
+                Много опыта не нужно, все расскажем и поможем! Если Вы 
+                располагаете несколькими часами свободного времени, 
+                проведите его с пользой! Главное условие - это Ваше 
+                совершеннолетие и любовь к животным!</p>
+              <p class="volunteer-content__text">Часто животным не хватает обычных прогулок и игры, они 
+                сидят в клетках и грустят.</p>
+            </div>
+            <!-- Переход пока реализован ссылкой, в будущем будет кнопка открывающая модальное окно -->
+            <a class="volunteer-content__link" href="./forms/volunteering.html"><img src="/" alt="">Оставить заявку</a>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="main__news news"> <!-- Секция нужна только для определения размеров -->
+        <article class="news__content pet-news">
+          <h3 class="pet-news__title">Новости</h3>
+          <article class="pet-news__content news-content">
+            <h4 class="news-content__title"></h4>
+            <img class="news-content__image"
+              src="./images/jpg/news-img__dog.jpg"
+              alt="Черная собака с открытой пастью смотрит в объектив фотокамеры.">
+            <div class="news-content__text-block">
+              <p class="news-content__text">Срочно необходимо забрать собаку (мальчик) на передержку или насовсем. 
+                Послезавтра его ждет усыпление. С кормом и доставкой поможем. В данный 
+                момент находится в вольера САХа.</p>
+              <p class="news-content__text">Контактный телефон + 37529 58930557</p>
+              <p class="news-content__text">Спасите жизнь хвостику.</p>
+            </div>
+          </article>
+          <article class="pet-news__content news-content">
+            <h4 class="news-content__title"></h4>
+            <img class="news-content__image"
+              src="./images/jpg/news-img__puppies.jpg"
+              alt="Маленькие чёрно-рыжие щенки забившись в угол жмутся друг к другу.">
+            <div class="news-content__text-block">
+              <p class="news-content__text">Найдены бездомные щенки по улице Горького д.56.</p>
+              <p class="news-content__text">Сегодня будут перевезены в вольеры САХа. Если у вас есть возможность взять 
+                на передержку или пристроить малышей - будем вам очень благодарны.</p>
+            </div>
+          </article>
+          <!-- Не создавал полную версию. После изучения js будет плавный, раскрывающийся список -->
+          <a class="pet-news__link" href="">Показать все новости</a>
+        </article>
+      </section>
+
+
+      <section class="main__about about-us">
+        <div class="about-us__content about-us-content">
+          <h3 class="about-us-content__title" id="about-us">О нас</h3>
+          <p class="about-us-content__text">Мы - благотворительное общественное объединение защиты животных 
+            «СПАСИ ЖИЗНЬ». Цель нашей деятельности: помощь бездомным животным, 
+            оказавшимся в Пункте отлова и временного содержания безнадзорных 
+            животных г.Гродно.</p>
+          <div class="about-us-content__contacts-block contacts-block">
+            <p class="contacts-block__text" id="contacts">Контакты</p>
+            <ul class="contacts-block__contacts contacts-list">
+              <li class="contacts-list__item">Если Вы хотите приютить одного из этих четвероногих или оказать 
+                какую-либо помощь, звоните волонтёрам:</li>
+              <li class="contacts-list__item">+375 (33) 6237879, Лена</li>
+              <li class="contacts-list__item">+375 (29) 7877791, Ольга</li>
+              <li class="contacts-list__item">+375 (29) 5837015, Рита</li>
+            </ul>
+          </div>
+          <div class="about-us-content__social-block social-block">
+            <p class="social-block__text">Связаться с нами можно написав в соц. сетях.</p>
+            <ul class="social-block__list social-list">
+              <li class="social-list__item">
+                <a class="social-list__link" href="https://vk.com/animalsgrodno">
+                  <img class="social-list__image" src="./images/svg/icon__vk-yellow.svg" alt="Ссылка на канал ВКонтакте">
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="https://www.instagram.com/animalsgrodno/">
+                  <img class="social-list__image" src="./images/svg/icon__instagram-yellow.svg" alt="Ссылка на канал Инстаграм">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="main__thanks thanks"> <!-- div или добавить секции скрытый header? -->
+        <div class="thanks__content thanks-content">
+          <p class="thanks-content__text">Спасибо за помощь</p>
+          <img class="thanks-content__image" src="./images/svg/thanks__paw.svg" alt="">
+        </div>
+      </section>
+    </main>
+
+
+    <footer class="footer">
+      <div class="footer__content footer-content">
+        <ul class="footer-content__navigation footer-nav">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#taming">Дом или передержка</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#help-fund">Финансовая поддержка</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#help-items">Корма, лекарства и другие вещи</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#help-transport">Автопомощь</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#help-volunteer">Волонтёрство</a>
+          </li>
+        </ul>
+        <ul class="footer-content__info footer-info">
+          <li class="footer-info__item">
+            <a class="footer-info__link" href="#about-us">О нас</a>
+          </li>
+          <li class="footer-info__item">
+            <a class="footer-info__link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+        <p class="footer-content__text">© 2020 БООЗЖ "СПАСИ ЖИЗНЬ"</p>
+      </div>
+    </footer>
+  </body>
+</html>

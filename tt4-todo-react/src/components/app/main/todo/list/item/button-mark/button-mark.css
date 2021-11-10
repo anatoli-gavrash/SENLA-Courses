@@ -1,0 +1,40 @@
+.tasks__button-important {
+  display: none;
+  flex-shrink: 0;
+  width: 183px;
+  height: 36px;
+  margin-left: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 200px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  background-color: #27ae60;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 
+              0px 3px 4px rgba(0, 0, 0, 0.12), 
+              0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.important .tasks__button-important {
+  background-color: #bdbdbd;
+}
+
+.tasks__items:hover .tasks__button-important,
+.tasks__items:focus-within .tasks__button-important {
+  display: inline-block;
+}
+
+.tasks__items:hover .important-display-none,
+.tasks__items:focus-within .important-display-none {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .tasks__button-important {
+    margin-left: 0;
+  }
+}

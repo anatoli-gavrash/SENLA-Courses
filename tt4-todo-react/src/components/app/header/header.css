@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  max-width: 797px;
+  margin: 20px 23px 20px 23px;
+  align-items: center;
+}
+
+.header__title {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+@media (max-width: 480px) {
+  .header__logo {
+    width: 140px;
+  }
+}

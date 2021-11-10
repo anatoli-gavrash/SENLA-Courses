@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link href="../stylesheets/normalize.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets/fonts.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets/forms__taming.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets/animation.css" rel="stylesheet" type="text/css">
+    <title>Забрать домой</title>
+  </head>
+  <body>
+    <header>
+    </header>
+
+    <main class="taming">
+      <form class="taming__form taming-form" name="taming-form">
+        <h3 class="taming-form__title">Забрать домой</h3>
+        <hr class="taming-form__delimeter">
+        <p class="taming-form__text">Оставьте информацию о себе. Мы позвоним вам и 
+          договоримся, когда вы сможете забрать себе 
+          питомца.</p>
+        <label class="taming-form__label label-full-name" for=id-full-name>Фамилия и имя</label>
+        <input class="taming-form__input"
+          type="text"
+          name="full-name"
+          id="id-full-name"
+          placeholder="Введите ваше имя и фамилию"
+          minlength="2"
+          maxlength="56"
+          autofocus>
+        <label class="taming-form__label label-phone" for=id-phone>Номер телефона (только белорусский номер)</label>
+        <input class="taming-form__input"
+          type="tel"
+          name="phone"
+          id="id-phone"
+          placeholder="Введите ваш номер телефона"
+          minlength="13"
+          maxlength="13"
+          required>
+        <label class="taming-form__label label-phone-warning" for="id-phone">Обязательное поле для заполнения</label>
+        <label class="taming-form__label label-remarks" for="id-remarks">Замечания</label>
+        <textarea class="taming-form__textarea"
+          name="remarks"
+          id="id-remarks"
+          placeholder="Введите информацию, которая будет полезна нам"
+          maxlength="500"></textarea>
+        <div class="taming-form__contacts taming-contacts">
+          <p class="taming-contacts__text">Если у вас есть вопросы, можете позвонить нам:</p>
+          <a class="taming-contacts__link" href="tel:+375336237879">+375 (33) 6237879&nbsp; Лена</a>
+          <a class="taming-contacts__link" href="tel:+375297877791">+375 (29) 7877791&nbsp; Ольга</a>
+          <a class="taming-contacts__link" href="tel:+375295837015">+375 (29) 5837015&nbsp; Рита</a>
+        </div>
+        <div class="taming-form__buttons taming-button">
+          <input class="taming-button__submit" type="submit" name="submit" id="id-submit" value="Отправить">
+          <button class="taming-button__cancel">Отмена</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1806 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Указывал для плавного перехода к якорям */
+/* html {
+  scroll-behavior: smooth;
+} */
+
+body {
+  overflow-x: hidden; /* Чтобы не было скролла внизу, при загрузке анимации */
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: "Gilroy", "Arial", "serif";
+  color: #242424;
+  background-color: #F6F6F6;
+}
+
+
+/* Background images */
+.background {
+  position: relative;
+  width: 1366px;
+  margin: 0 auto;
+}
+
+.first-picture {
+  position: absolute;
+  top: 0;
+  left: 538px;
+  z-index: -2;
+  border-radius: 0 0 8px 8px;
+  animation: bkgr-image1--slide-right 1s;
+}
+
+.second-picture {
+  position: absolute;
+  top: 470px;
+  left: 607px;
+  z-index: 1;
+  animation: bkgr-image2--slide-bottom 1s;
+}
+
+.background__text {
+  position: absolute;
+  top: 374px;
+  width: 770px;
+  z-index: -1;
+  animation: bkgr-text--slide-bottom 1.5s;
+}
+
+.background__image--position-text1 {
+  width: 77.8%;
+}
+
+.background__image--position-text2 {
+  margin-top: -4px;
+  width: 69.3%;
+}
+
+.background__image--position-text3 {
+  margin-top: -6px;
+  margin-left: 38.4%;
+  width: 61.6%;
+}
+/* /Background images */
+
+
+/* Header */
+.header {
+  position: relative;
+  width: 1366px;
+  min-height: 88px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  width: 1049px;
+  margin: 39px 110px 0 110px;
+  align-items: center;
+}
+
+.header-content__burger-menu-image {
+  display: none;
+}
+
+  /* Навигация */
+  .header-content__navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 633px;
+  }
+
+  .header-nav__list {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .header-nav__item {
+    margin-right: 32px;
+  }
+
+  .header-nav__item--reset-margin {
+    margin: 0;
+  }
+
+  .header-nav__link {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Gilroy", "Arial", "serif";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #242424;
+  }
+
+  .header-nav__link:hover {
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  .header-nav__link:active {
+    font-weight: 700;
+    font-size: 16px;
+    color: #6b6b6b;
+    text-decoration: underline;
+  }
+
+  .header-nav__link:disabled {
+    color: #b3b3b3;
+  }
+
+  .header-nav__link:focus {
+    outline: none;
+  }
+
+  .header-nav__link:focus-visible {
+    outline: 2px solid #6b6b6b;
+  }
+  /* /Навигация */
+
+  /* Социальные сети */
+  .header-content__social {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .header-social__item:last-child {
+    margin-left: 28px;
+  }
+
+  .header-social__link {
+    display: flex;
+    width: 49px;
+    height: 49px;
+    border: 2px solid white;
+    border-radius: 50%;
+  }
+
+  .header-social__link:hover {
+    background-color: #ffd458;
+    box-shadow: 0 4px 4px rgba(113, 113, 113, 0.2);
+  }
+
+  .header-social__link:active {
+    background-color: #ffbc00;
+  }
+
+  .header-social__link:focus {
+    outline: none;
+  }
+
+  .header-social__link:focus-visible {
+    border: 3px solid #6b6b6b;
+  }
+
+  .header-social__image {
+    margin: auto;
+  }
+  /* /Социальные сети */
+
+/* /Header */
+
+
+/* save-life */
+.main__save-life {
+  overflow: hidden;
+  width: 1366px;
+  min-height: 746px;
+  margin: 0 auto;
+}
+
+.save-life__content {
+  width: 659px;
+  margin: 75px 110px 0 110px;
+}
+
+.save-life__title {
+  margin: 0;
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 80px;
+  color: #242424;
+}
+
+.save-life__text--text-light {
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #6b6b6b;
+}
+
+.save-life__text--text-bold {
+  margin-top: 12px;
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #474747;
+}
+
+.save-life__text--modify-text {
+  display: block;
+  width: 428px;
+  margin-top: 43px;
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #c78100;
+}
+
+/* Обёртка. Чтобы не не повторялась анимация после hover */
+.save-life__wrapper-button {
+  animation: save-life-button--slide-left 1s;
+}
+
+.save-life__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 182px;
+  height: 42px;
+  margin-top: 44px;
+  padding: 0 10px;
+  border-radius: 58px;
+  text-align: center;
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #242424;
+  background-color: #fbc832;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.save-life__link:hover {
+  box-shadow: 0 2px 4px #cccccc;
+  background-image: radial-gradient(circle, #ffdf86 20%, transparent 20%);
+  color: black;
+  animation: buttons--animation-hover 0.3s forwards;
+  transition: box-shadow 0.3s;
+}
+
+.save-life__link:active {
+  box-shadow: none;
+  background-image: radial-gradient(circle, #ffbb0c 20%, transparent 20%);
+  color: black;
+  animation: buttons--animation-active 0.3s forwards;
+}
+
+.save-life__link:disabled {
+  background-color: #ffe28e;
+  color: #6b6b6b;
+}
+
+.save-life__link:focus {
+  outline: none;
+}
+
+.save-life__link:focus-visible {
+  border: 3px solid #6b6b6b;
+}
+/* save-life */
+
+
+/* Описание */
+.main__description {
+  overflow: hidden;
+  min-height: 650px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.description__content {
+  display: flex;
+  justify-content: center;
+  margin-top: 54px;
+  padding-right: 32px;
+}
+
+  /* Блок картинок */
+  .description-content__images {
+    position: relative;
+    width: 550px;
+    height: 541px;
+  }
+
+  .description-content__images::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 5.3%;
+    height: 96.3%;
+    min-width: 877px;
+    flex-grow: 1;
+    border-radius: 0 261px 261px 0;
+    background-color: #ffc41e;
+  }
+  
+  .description-content__img--img1-modify {
+    position: relative;
+    width: 94.7%;
+    margin-right: 5.3%;
+    border: 23px solid #ffc41e;
+    border-radius: 50%;
+    background-color: #ffc41e;
+    z-index: 1;
+  }
+
+  .description-content__img--img2-modify {
+    position: absolute;
+    width: 44.5%;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    border: 8px solid #eebf3a;
+    border-radius: 50%;
+  }
+  /* /Блок картинок */
+
+  /* Текст */
+  .description-content__text-list {
+    margin: 71px 97px 0 65px;
+    width: 466px;
+  }
+
+  .description-content__title {
+    text-align: center;
+    font-family: "Gilroy", "Arial", "serif";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #c78100;
+  }
+
+  .description-content__text {
+    font-family: "Gilroy", "Arial", "serif";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #242424;
+  }
+
+  .description-content__text--text1-margin {
+    margin-top: 23px;
+  }
+
+  .description-content__text--text2-margin {
+    margin-top: 21px;
+  }
+  /* /Текст */
+
+/* /Описание */
+
+
+/* Как помочь? */
+.main__how-help {
+  overflow: hidden;
+  width: 1366px;
+  min-height: 471px;
+  margin: 0 auto;
+}
+
+.how-help__content {
+  width: 1146px;
+  margin: 80px 110px 0 110px;
+}
+
+.how-help__title {
+  text-align: center;
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 23px;
+  color: #242424;
+}
+
+.how-help__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-top: 48px;
+  visibility: hidden;
+}
+
+.how-help__item {
+  position: relative;
+  visibility: hidden;
+  width: 166px;
+  height: 240px;
+  animation: how-help-buttons--slide-bottom 1s forwards;
+}
+
+.how-help__item:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.how-help__item:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.how-help__item:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.how-help__item:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.how-help__link {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border: 2px solid #ffc41e;
+  border-radius: 50%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.how-help__link:hover {
+  box-shadow: 0 2px 4px #cccccc;
+  background-image: radial-gradient(circle, #ffffff 50%, transparent 50%);
+  animation: how-help-buttons--animation-hover 0.3s forwards;
+  transition: box-shadow 0.3s;
+}
+
+.how-help__link:active {
+  box-shadow: none;
+  background-image: radial-gradient(circle, #F8ECCB 50%, transparent 50%);
+  animation: how-help-buttons--animation-active 0.3s forwards;
+}
+
+.how-help__link:focus {
+  outline: none;
+}
+
+.how-help__link:focus-visible {
+  border: 3px solid #6b6b6b;
+}
+
+.how-help__img {
+  margin: auto;
+  width: 63.7%;
+}
+
+.how-help__text {
+  margin-top: 24px;
+  text-align: center;
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #242424;
+}
+/* /Как помочь? */
+
+
+/* Приручение */
+.main__taming {
+  overflow: hidden;
+  min-height: 2207px;
+  margin: 0 auto;
+}
+
+.taming__image-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 144px;
+}
+
+.taming__image-wrapper::before,
+.taming__image-wrapper::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  margin: auto 0;
+  background-color: #eebf3a;
+}
+
+.taming__image {
+  margin: auto 32px;
+}
+
+.taming__content {
+  width: 1366px;
+  margin: 69px auto 0 auto;
+}
+
+  /* Текст */
+  .taming-content__text-list {
+    display: flex;
+    justify-content: space-between;
+    width: 875px;
+    margin: 0 207px 0 284px;
+  }
+  
+  .taming-text-list__text-wrapper {
+    width: 389px;
+  }
+  
+  .taming-text-list__title {
+    font-family: "Gilroy", "Arial", "serif";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    color: #242424;
+  }
+  
+  .taming-text-list__text {
+    margin-top: 19px;
+    font-family: "Gilroy", "Arial", "serif";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #242424;
+  }
+  /* /Текст */
+  
+  /* Карточки питомцев */
+  .taming-content__cards {
+    display: flex;
+    flex-direction: column;
+    width: 1145px;
+    margin: 67px 110px 0 110px;
+  }
+  
+  .pet-cards__title {
+    text-align: center;
+    font-family: "Gilroy", "Arial", "serif";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    color: #242424;
+  }
+  
+  .pet-cards__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1146px;
+    margin-top: 29px;
+  }
+
+  .pet-list__item {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    width: 368px;
+    height: 695px;
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    background-color: white;
+    animation: pet-cards--appearance 1s forwards;
+  }
+
+  .pet-list__item:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  .pet-list__item:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  .pet-list__item:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  .pet-list__item:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+  .pet-list__item:nth-child(6) {
+    animation-delay: 0.5s;
+  }
+
+  .pet-list__item:nth-child(n+4) {
+    margin-top: 44px;
+  }
+
+  .pet-list__card {
+    height: 555px;
+  }
+
+  .pet-list__image {
+    margin-top: 15px;
+    margin-left: 16px;
+  }
+
+  .pet-list__title {
+    text-align: center;
+    font-family: "Gilroy", "Arial", "serif";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    color: #242424;
+  }
+
+  .pet-list__delimeter {
+    height: 1px;
+    margin: 6px 15px 0 16px;
+    border: none;
+    background-color: #d6d6d6;
+  }
+
+  .pet-list__text {
+    margin: 6px 15px 0 16px;
+    font-family: "Gilroy", "Arial", "serif";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #242424;
+  }
+  
+  .pet-list__text--gray-color {
+    margin-top: 8px;
+    color: #6b6b6b;
+  }
+  
+  .pet-list__button {
+    width: 209px;
+    height: 42px;
+    margin: 18px auto 0 auto;
+    padding: 0 10px;
+    border: none;
+    border-radius: 58px;
+    font-family: "Gilroy", "Arial", "serif";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #242424;
+    background-color: #fbc832;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  .pet-list__button:hover {
+    box-shadow: 0 2px 4px #cccccc;
+    background-image: radial-gradient(circle, #ffdf86 20%, transparent 20%);
+    color: black;
+    animation: buttons--animation-hover 0.3s forwards;
+    transition: box-shadow 0.3s;
+  }
+  
+  .pet-list__button:active {
+    box-shadow: none;
+    background-image: radial-gradient(circle, #ffbb0c 20%, transparent 20%);
+    color: black;
+    animation: buttons--animation-active 0.3s forwards;
+  }
+  
+  .pet-list__button:disabled {
+    background-color: #ffe28e;
+    color: #6b6b6b;
+  }
+  
+  .pet-list__button:focus {
+    outline: none;
+  }
+
+  .pet-list__button:focus-visible {
+    border: 3px solid #6b6b6b;
+  }
+
+  .pet-list__button--alt-style {
+    width: 296px;
+    margin-top: 17px;
+    border: 2px solid #FFC41E;
+    background-color: unset;
+  }
+
+  .pet-list__button--alt-style:hover {
+    border: 3px solid #ffbc00;
+    box-shadow: 0 2px 4px #cccccc;
+    background-image: radial-gradient(circle, #ffffff 20%, transparent 20%);
+    color: black;
+    animation: buttons--animation-hover 0.3s forwards;
+    transition: box-shadow 0.3s;
+  }
+  
+  .pet-list__button--alt-style:active {
+    border: 3px solid #ffbc00;
+    box-shadow: none;
+    background-image: radial-gradient(circle, rgba(255, 196, 30, 0.2) 20%, transparent 20%);
+    color: #242424;
+    animation: buttons--animation-active 0.3s forwards;
+  }
+  
+  .pet-list__button--alt-style:disabled {
+    border: 3px solid #b3b3b3;
+    background-color: unset;
+    color: #6b6b6b;
+  }
+
+  /* Переход по ссылкам к формам
+  Удалить после добавления модальных окон */
+  .pet-list__link {
+    text-decoration: none;
+    color: #242424;
+  }
+
+  .pet-list__link:focus {
+    outline: none;
+  }
+
+  .pet-cards__link {
+    display: inline-block;
+    margin: 29px auto 0 auto;
+    font-family: "Gilroy", "Arial", "serif";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ad7f00;
+  }
+
+  .pet-cards__link:hover {
+    color: #523c00;
+  }
+
+  .pet-cards__link:active {
+    color: #f6b400;
+  }
+
+  .pet-cards__link:disabled {
+    color: #c3c3c3;
+  }
+
+  .pet-cards__link:focus {
+    outline: none;
+  }
+
+  .pet-cards__link:focus-visible {
+    outline: 2px solid #6b6b6b;
+  }
+
+  .pet-cards__image {
+    align-self: center;
+    text-decoration: none;
+    height: 18px;
+    margin-left: 17px;
+  }
+  /* /Карточки питомцев */
+  
+  /* Социальные сети */
+  .taming-content__social {
+    display: flex;
+    justify-content: space-between;
+    width: 751px;
+    margin: 73px auto 0 auto;
+  }
+
+  .taming-social__text {
+    width: 583px;
+    font-family: "Gilroy", "Arial", "serif";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #242424;
+  }
+
+  .taming-social__list {
+    display: flex;
+    align-self: center;
+    list-style-type: none;
+  }
+
+  .taming-social__item:last-child {
+    margin-left: 32px;
+  }
+
+  .taming-social__link {
+    display: flex;
+    width: 49px;
+    height: 49px;
+    border: 2px solid #ffc41e;
+    border-radius: 50%;
+  }
+
+  .taming-social__link:hover {
+    background-color: white;
+    box-shadow: 0 4px 4px #cccccc;
+  }
+
+  .taming-social__link:active {
+    background-color: #f8eccb;
+  }
+
+  .taming-social__link:focus {
+    outline: none;
+  }
+
+  .taming-social__link:focus-visible {
+    border: 3px solid #6b6b6b;
+  }
+
+  .taming-social__image {
+    margin: auto;
+  }
+  /* /Социальные сети */
+
+/* /Приручение */
+
+
+/* Финансовая поддержка */
+.main__help-fund {
+  overflow: hidden;
+  min-height: 681px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.help-fund__image-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 126px;
+  margin-top: 30px;
+}
+
+.help-fund__image-wrapper::before,
+.help-fund__image-wrapper::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  margin: auto 0;
+  background-color: #eebf3a;
+}
+
+.help-fund__image {
+  margin: auto 38px;
+}
+
+.help-fund__content {
+  width: 950px;
+  margin: 40px auto 0 auto;
+}
+
+  /* Текст */
+  .fund-content__title {
+    text-align: center;
+    font-family: "Gilroy", "Arial", "serif";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 33px;
+    color: #242424;
+  }
+
+  .fund-content__text {
+    width: 758px;
+    margin: 27px auto 0 auto;
+    text-align: center;
+    font-family: "Gilroy", "Arial", "serif";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #6b6b6b;
+  }
+
+  .fund-content__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 38px;
+  }
+
+    /* Банковские данные */
+    .fund-content__bank {
+      width: 389px;
+      margin-left: 76px;
+    }
+
+    .bank-details__title {
+      font-family: "Gilroy", "Arial", "serif";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 28px;
+      color: #242424;
+    }
+
+    .bank-details__list {
+      list-style-type: none;
+      margin-top: 18px;
+    }
+
+    .bank-details__item {
+      font-family: "Gilroy", "Arial", "serif";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 28px;
+      color: #242424;
+    }
+
+    .bank-details__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      width: 223px;
+      height: 42px;
+      margin-top: 23px;
+      padding: 0 10px;
+      border-radius: 58px;
+      text-align: center;
+      font-family: "Gilroy", "Arial", "serif";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      color: black;
+      background-color: #fbc832;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+
+    .bank-details__link:hover {
+      box-shadow: 0 2px 4px #cccccc;
+      background-image: radial-gradient(circle, #ffdf86 20%, transparent 20%);
+      color: black;
+      animation: buttons--animation-hover 0.3s forwards;
+      transition: box-shadow 0.3s;
+    }
+    
+    .bank-details__link:active {
+      box-shadow: none;
+      background-image: radial-gradient(circle, #ffbb0c 20%, transparent 20%);
+      color: black;
+      animation: buttons--animation-active 0.3s forwards;
+    }
+    
+    .bank-details__link:disabled {
+      background-color: #ffe28e;
+      color: #6b6b6b;
+    }
+    
+    .bank-details__link:focus {
+      outline: none;
+    }
+
+    .bank-details__link:focus-visible {
+      border: 3px solid #6b6b6b;
+    }
+    /* /Банковские данные */
+
+    /* Коробки для пожертвований */
+    .fund-content__fund-boxes {
+      width: 389px;
+    }
+
+    .fund-boxes__title {
+      font-family: "Gilroy", "Arial", "serif";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 28px;
+      color: #242424;
+    }
+
+    .fund-boxes__list {
+      list-style-type: none;
+      margin-top: 18px;
+    }
+
+    .fund-boxes__item {
+      font-family: "Gilroy", "Arial", "serif";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 28px;
+      color: #242424;
+    }
+
+    .fund-boxes__link {
+      display: inline-block;
+      margin-top: 30px;
+      font-family: "Gilroy", "Arial", "serif";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      color: #ad7f00;
+    }
+
+    .fund-boxes__link:hover {
+      color: #523c00;
+    }
+  
+    .fund-boxes__link:active {
+      color: #f6b400;
+    }
+  
+    .fund-boxes__link:disabled {
+      color: #c3c3c3;
+    }
+  
+    .fund-boxes__link:focus {
+      outline: none;
+    }
+
+    .fund-boxes__link:focus-visible {
+      outline: 2px solid #6b6b6b;
+    }
+    /* /Коробки для пожертвований */
+
+  /* /Текст */
+
+/* /Финансовая поддержка */
+
+
+/* Чем можно помочь */
+.main__help-items {
+  overflow: hidden;
+  min-height: 934px;
+  margin: 0 auto;
+}
+
+.help-items__image-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 126px;
+  margin-top: 36px;
+}
+
+.help-items__image-wrapper::before,
+.help-items__image-wrapper::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  margin: auto 0;
+  background-color: #eebf3a;
+}
+
+.help-items__image {
+  margin: auto 38px;
+}
+
+.help-items__content {
+  width: 794px;
+  margin: 41px auto 0 auto;
+  padding-left: 116px;
+}
+
+  /* Корма */
+  .items-content__feed {
+    max-width: 559px;
+  }
+
+  .items-feed__title {
+    font-family: "Gilroy", "Arial", "serif";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    color: #242424;
+  }
+
+  .items-feed__list {
+    list-style-type: none;
+    margin-top: 23px;
+  }
+
+  .items-feed__item {
+    font-family: "Gilroy", "Arial", "serif";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #242424;
+  }
+
+  .items-feed__item--font-gray {
+    color: #6f6c6c;
+  }
+
+  .items-feed__list li:nth-child(n+2) {
+    margin-top: 6px;
+  }
+  /* /Корма */
+
+  /* Лекарства */
+  .items-content__medicines {
+    max-width: 659px;
+    margin-top: 41px;
+  }
+
+  .item-medicines__title {
+    font-family: "Gilroy", "Arial", "serif";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    color: #242424;
+  }
+
+  .item-medicines__text {
+    margin-top: 23px;
+    font-family: "Gilroy", "Arial", "serif";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #242424;
+  }
+  /* /Лекарства */
+
+  /* Другие вещи */
+  .items-content__other {
+    max-width: 678px;
+    margin-top: 41px;
+  }
+  
+  .items-other__title {
+    font-family: "Gilroy", "Arial", "serif";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    color: #242424;
+  }
+
+  .items-other__list {
+    list-style-type: none;
+    margin-top: 23px;
+  }
+
+  .items-other__item {
+    font-family: "Gilroy", "Arial", "serif";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #242424;
+  }
+
+  .items-other__list li:nth-child(n+2) {
+    margin-top: 6px;
+  }
+  /* /Другие вещи */
+
+.items-content__link {
+  display: inline-block;
+  margin-top: 27px;
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ad7f00;
+}
+
+.items-content__link:hover {
+  color: #523c00;
+}
+
+.items-content__link:active {
+  color: #f6b400;
+}
+
+.items-content__link:disabled {
+  color: #c3c3c3;
+}
+
+.items-content__link:focus {
+  outline: none;
+}
+
+.items-content__link:focus-visible {
+  outline: 2px solid #6b6b6b;
+}
+/* /Чем можно помочь */
+
+
+/* Автопомощь */
+.main__help-transport {
+  overflow: hidden;
+  min-height: 418px;
+  margin: 0 auto;
+}
+
+.help-transport__image-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 126px;
+  margin-top: 30px;
+}
+
+.help-transport__image-wrapper::before,
+.help-transport__image-wrapper::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  margin: auto 0;
+  background-color: #eebf3a;
+}
+
+.help-transport__image {
+  margin: auto 38px;
+}
+
+.help-transport__content {
+  width: 798px;
+  margin: 37px auto 0 auto;
+  padding-left: 118px;
+}
+
+.content-transport__title {
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  color: #242424;
+}
+
+.content-transport__text {
+  margin-top: 19px;
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #242424;
+}
+
+.content-transport__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 223px;
+  height: 42px;
+  margin-top: 24px;
+  padding: 0 10px;
+  border-radius: 58px;
+  text-align: center;
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #242424;
+  background-color: #fbc832;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.content-transport__link:hover {
+  box-shadow: 0 2px 4px #cccccc;
+  background-image: radial-gradient(circle, #ffdf86 20%, transparent 20%);
+  color: black;
+  animation: buttons--animation-hover 0.3s forwards;
+  transition: box-shadow 0.3s;
+}
+
+.content-transport__link:active {
+  box-shadow: none;
+  background-image: radial-gradient(circle, #ffbb0c 20%, transparent 20%);
+  color: black;
+  animation: buttons--animation-active 0.3s forwards;
+}
+
+.content-transport__link:disabled {
+  background-color: #ffe28e;
+  color: #6b6b6b;
+}
+
+.content-transport__link:focus {
+  outline: none;
+}
+
+.content-transport__link:focus-visible {
+  border: 3px solid #6b6b6b;
+}
+/* /Автопомощь */
+
+
+/* Волонтёрство */
+.main__help-volunteer {
+  overflow: hidden;
+  min-height: 717px;
+  margin: 0 auto;
+}
+
+.help-volunteer__image-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 126px;
+  margin-top: 30px;
+}
+
+.help-volunteer__image-wrapper::before,
+.help-volunteer__image-wrapper::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  margin: auto 0;
+  background-color: #eebf3a;
+}
+
+.help-volunteer__image {
+  margin: auto 38px;
+}
+
+.help-volunteer__content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-right: 14px;
+}
+
+.volunteer-content__image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+  width: 521px;
+  height: 521px;
+  bottom: 10px;
+}
+
+.volunteer-content__image-wrapper::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  height: 100%;
+  min-width: 892px;
+  flex-grow: 1;
+  border-radius: 0 261px 261px 0;
+  background-color: #ffc41e;
+}
+
+.volunteer-content__image {
+  position: relative;
+  align-self: center;
+  width: 89.1%;
+  right: 4.4%;
+  border-radius: 50%;
+}
+
+.volunteer-content__text-list {
+  max-width: 466px;
+  margin: 0 97px 22px 78px;
+  align-self: center;
+}
+
+.volunteer-content__title {
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  color: #242424;
+}
+
+.volunteer-content__text-block {
+  margin-top: 19px;
+}
+
+.volunteer-content__text {
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #242424;
+}
+
+.volunteer-content__text-block p:nth-child(n+2) {
+  margin-top: 6px;
+}
+
+.volunteer-content__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 223px;
+  height: 42px;
+  margin-top: 24px;
+  padding: 0 10px;
+  border-radius: 58px;
+  text-align: center;
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #242424;
+  background-color: #fbc832;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.volunteer-content__link:hover {
+  box-shadow: 0 2px 4px #cccccc;
+  background-image: radial-gradient(circle, #ffdf86 20%, transparent 20%);
+  color: black;
+  animation: buttons--animation-hover 0.3s forwards;
+  transition: box-shadow 0.3s;
+}
+
+.volunteer-content__link:active {
+  box-shadow: none;
+  background-image: radial-gradient(circle, #ffbb0c 20%, transparent 20%);
+  color: black;
+  animation: buttons--animation-active 0.3s forwards;
+}
+
+.volunteer-content__link:disabled {
+  background-color: #ffe28e;
+  color: #6b6b6b;
+}
+
+.volunteer-content__link:focus {
+  outline: none;
+}
+
+.volunteer-content__link:focus-visible {
+  border: 3px solid #6b6b6b;
+}
+/* /Волонтёрство */
+
+
+/* Новости */
+.main__news {
+  overflow: hidden;
+  min-height: 563px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.news__content {
+  width: 798px;
+  margin: 55px auto 0 auto;
+}
+
+.pet-news__title {
+  text-align: center;
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  color: #242424;
+}
+
+.pet-news__content {
+  visibility: hidden;
+  display: flex;
+  width: 778px;
+  margin: 40px 0 0 20px;
+  animation: news--slide-left 1s forwards;
+}
+
+.pet-news__content:nth-child(3) {
+  animation-delay: 0.1s;
+}
+
+.news-content__image {
+  margin: auto 0;
+  border-radius: 50%;
+}
+
+.news-content__text-block {
+  width: 603px;
+  margin: auto 0 auto 35px;
+}
+
+.news-content__text {
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #242424;
+}
+
+.news-content__text-block p:nth-child(n+2) {
+  margin-top: 6px;
+}
+
+.pet-news__link {
+  display: inline-block;
+  margin-top: 32px;
+  margin-left: 20px;
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ad7f00;
+}
+
+.pet-news__link:hover {
+  color: #523c00;
+}
+
+.pet-news__link:active {
+  color: #f6b400;
+}
+
+.pet-news__link:disabled {
+  color: #c3c3c3;
+}
+
+.pet-news__link:focus {
+  outline: none;
+}
+
+.pet-news__link:focus-visible {
+  outline: 2px solid #6b6b6b;
+}
+/* /Новости */
+
+
+/* О нас */
+.main__about {
+  overflow: hidden;
+  min-height: 594px;
+  margin: 0 auto;
+}
+
+.about-us__content {
+  width: 798px;
+  margin: 53px auto 0 auto;
+}
+
+.about-us-content__title {
+  text-align: center;
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  color: #242424;
+}
+
+.about-us-content__text {
+  margin-top: 27px;
+  margin-left: 118px;
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #242424;
+}
+
+.about-us-content__contacts-block {
+  margin-top: 24px;
+  margin-left: 118px;
+}
+
+.contacts-block__text {
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  color: #242424;
+}
+
+.contacts-block__contacts {
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+.contacts-list__item {
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #242424;
+}
+
+.contacts-block__contacts li:nth-child(n+2) {
+  margin-top: 6px;
+}
+
+.about-us-content__social-block {
+  margin-top: 43px;
+  margin-left: 118px;
+}
+
+.social-block__text {
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #6b6b6b;
+}
+
+.social-block__list {
+  display: flex;
+  list-style-type: none;
+  margin-top: 16px;
+}
+
+.social-list__item:last-child {
+  margin-left: 32px;
+}
+
+.social-list__link {
+  display: flex;
+  width: 49px;
+  height: 49px;
+  border: 2px solid #ffc41e;
+  border-radius: 50%;
+}
+
+.social-list__link:hover {
+  background-color: white;
+  box-shadow: 0 4px 4px #cccccc;
+}
+
+.social-list__link:active {
+  background-color: #f8eccb;
+}
+
+.social-list__link:focus {
+  outline: none;
+}
+
+.social-list__link:focus-visible {
+  border: 3px solid #6b6b6b;
+}
+
+.social-list__image {
+  margin: auto;
+}
+/* /О нас */
+
+
+/* Благодарность */
+.main__thanks {
+  overflow: hidden;
+  min-height: 741px;
+  margin: 0 auto;
+  background-image: url(../images/jpg/thanks__dog-1366.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.thanks__content {
+  position: relative;
+  display: flex;
+  margin-top: 119px;
+  width: 615px;
+  height: 521px;
+}
+
+.thanks__content::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: soft-light;
+  border-radius: 0 261px 261px 0;
+  background-color: #322d1e;
+}
+
+.thanks-content__text {
+  width: 346px;
+  margin: auto;
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  color: white;
+}
+
+.thanks-content__image {
+  position: absolute;
+  width: 14.6%;
+  top: 48.8%;
+  right: 7.5%;
+}
+/* /Благодарность */
+
+
+/* Footer */
+.footer {
+  overflow: hidden;
+  width: 1366px;
+  min-height: 117px;
+  margin: 0 auto;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1146px;
+  margin: 39px 110px 0 110px;
+}
+
+.footer-content__navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 876px;
+  margin-left: 5px;
+}
+
+.footer-nav__item {
+  list-style-type: none;
+}
+
+.footer-nav__link {
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #474747;
+}
+
+.footer-nav__link:hover {
+  color: #ad7f00;
+}
+
+.footer-nav__link:focus {
+  outline: none;
+}
+
+.footer-nav__link:focus-visible {
+  outline: 2px solid #6b6b6b;
+}
+
+.footer-content__info {
+  display: flex;
+  justify-content: space-between;
+  width: 143px;
+}
+
+.footer-info__item {
+  list-style-type: none;
+}
+
+.footer-info__link {
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #242424;
+}
+
+.footer-info__link:hover {
+  color: #ad7f00;
+}
+
+.footer-info__link:focus {
+  outline: none;
+}
+
+.footer-info__link:focus-visible {
+  outline: 2px solid #6b6b6b;
+}
+
+.footer-content__text {
+  flex-grow: 1;
+  margin-top: 26px;
+  text-align: center;
+  font-family: "Gilroy", "Arial", "serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 17px;
+  color: #b3b3b3;
+}
+/* /Footer */

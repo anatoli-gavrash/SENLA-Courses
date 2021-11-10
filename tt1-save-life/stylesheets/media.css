@@ -1,0 +1,2321 @@
+@media (max-width: 1269px) {
+  /* Background images */
+  .background {
+    width: 1024px;
+  }
+
+  .first-picture {
+    left: 410px;
+  }
+
+  .second-picture {
+    top: 374px;
+    left: 463px;
+  }
+
+  .background__text {
+    top: 310px;
+    width: 573px;
+  }
+  /* /Background images */
+
+
+  /* header */
+  .header {
+    width: 1024px;
+  }
+
+  .header__content {
+    width: 735px;
+  }
+
+  .header-content__navigation {
+    width: 491px;
+  }
+  /* /header */
+
+
+  /* save-life */
+  .main__save-life {
+    width: 1024px;
+    min-height: 554px;
+  }
+
+  .save-life__content {
+    width: 461px;
+    margin-top: 33px;
+  }
+
+  .save-life__title {
+    font-size: 64px;
+    line-height: 77px;
+  }
+  
+  .save-life__text--text-light {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  
+  .save-life__text--text-bold {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .save-life__text--modify-text {
+    margin-top: 42px;
+    width: 300px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  /* /save-life */
+
+
+  /* Описание */
+  .main__description {
+    width: 1024px;
+    min-height: 568px;
+  }
+
+  .description__content {
+    margin-top: 36px;
+    padding-right: 0;
+  }
+
+  .description-content__images {
+    width: 382px;
+    height: 375px;
+  }
+
+  .description-content__images:before {
+    height: 96.4%;
+  }
+
+  .description-content__img--img1-modify {
+    border-width: 16px;
+  }
+
+  .description-content__img--img2-modify {
+    border-width: 5px;
+  }
+
+  .description-content__text-list {
+    width: 323px;
+    margin: 34px 97px 0 53px;
+  }
+
+  .description-content__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  
+  .description-content__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .description-content__text--text1-margin {
+    margin-top: 28px;
+  }
+
+  .description-content__text--text2-margin {
+    margin-top: 17px;
+  }
+  /* /Описание */
+
+
+  /* Как помочь? */
+  .main__how-help {
+    width: 1024px;
+    min-height: 364px;
+  }
+
+  .how-help__content {
+    width: 804px;
+    margin-top: 64px
+  }
+
+  .how-help__list {
+    margin-top: 33px;
+  }
+
+  .how-help__item {
+    width: 140px;
+    height: 190px;
+  }
+
+  .how-help__link {
+    width: 110px;
+    height: 110px;
+  }
+
+  .how-help__text {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  /* /Как помочь? */
+
+
+  /* Приручение */
+  .main__taming {
+    width: 1024px;
+    min-height: 2938px;
+  }
+
+  .taming__image {
+    width: 100px;
+    margin: auto 29px;
+  }
+
+  .taming__content {
+    width: 1024px;
+    margin-top: 40px;
+  }
+
+  .taming-content__text-list {
+    width: 619px;
+    margin: 0 179px 0 227px;
+  }
+
+  .taming-text-list__text-wrapper {
+    width: 275px;
+  }
+
+  .taming-text-list__title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .taming-text-list__text {
+    margin-top: 16px;
+  }
+
+  .taming-text-list__text--margin {
+    margin-top: 40px;
+  }
+
+  .taming-content__cards {
+    width: 804px;
+    margin-top: 48px;
+  }
+
+  .pet-cards__title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .pet-cards__list {
+    margin-top: 24px;
+  }
+
+  .pet-list__item:nth-child(n+3) {
+    margin-top: 44px;
+  }
+
+  .pet-cards__link {
+    margin-top: 21px;
+  }
+
+  .taming-content__social {
+    width: 666px;
+    margin-top: 56px
+  }
+
+  .taming-social__text {
+    width: 529px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  /* /Приручение */
+
+
+  /* Финансовая поддержка */
+  .main__help-fund {
+    width: 1024px;
+    min-height: 679px;
+  }
+
+  .help-fund__image-wrapper {
+    margin-top: 14px;
+  }
+
+  .help-fund__image {
+    width: 88px;
+    margin: auto 32px;
+  }
+
+  .help-fund__content {
+    max-width: 666px;
+    margin-top: 28px;
+  }
+
+  .fund-content__title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .fund-content__text {
+    width: 530px;
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .fund-content__wrapper {
+    margin-top: 29px;
+  }
+
+  .fund-content__bank {
+    max-width: 275px;
+    margin-left: 48px;
+  }
+
+  .bank-details__title {
+    font-size: 24px;
+  }
+  
+  .bank-details__list {
+    margin-top: 21px;
+  }
+
+  .bank-details__item {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .bank-details__link {
+    margin-top: 10px;
+  }
+
+  .fund-content__fund-boxes {
+    width: 275px;
+  }
+
+  .fund-boxes__title {
+    font-size: 24px;
+  }
+
+  .fund-boxes__list {
+    margin-top: 23px;
+  }
+
+  .fund-boxes__item {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .fund-boxes__link {
+    display: none;
+  }
+  /* /Финансовая поддержка */
+
+
+  /* Чем можно помочь */
+  .main__help-items {
+    width: 1024px;
+    min-height: 966px;
+  }
+
+  .help-items__image {
+    width: 86px;
+    margin: auto 32px;
+  }
+
+  .help-items__content {
+    width: 570px;
+    margin-top: 26px;
+    padding-left: 89px;
+  }
+
+  .items-feed__title {
+    font-size: 24px;
+  }
+
+  .items-feed__list {
+    margin-top: 27px;
+  }
+
+  .items-content__medicines {
+    margin-top: 42px;
+  }
+
+  .item-medicines__title {
+    font-size: 24px;
+  }
+
+  .item-medicines__text {
+    margin-top: 27px;
+  }
+
+  .items-content__other {
+    margin-top: 42px;
+  }
+
+  .items-other__title {
+    font-size: 24px;
+  }
+
+  .items-other__list {
+    margin-top: 27px;
+  }
+
+  .items-content__link {
+    margin-top: 23px;
+  }
+  /* /Чем можно помочь */
+
+
+  /* Автопомощь */
+  .main__help-transport {
+    width: 1024px;
+    min-height: 406px;
+  }
+
+  .help-transport__image-wrapper {
+    height: 88px;
+  }
+
+  .help-transport__image {
+    width: 82px;
+    margin: auto 32px;
+  }
+
+  .help-transport__content {
+    width: 570px;
+    margin-top: 22px;
+    padding-left: 89px;
+  }
+
+  .content-transport__title {
+    font-size: 24px;
+  }
+
+  .content-transport__text {
+    margin-top: 23px;
+  }
+
+  .content-transport__link {
+    margin-top: 38px;
+  }
+  /* /Автопомощь */
+
+
+  /* Волонтёрство */
+  .main__help-volunteer {
+    width: 1024px;
+    min-height: 611px;
+  }
+
+  .help-volunteer__image {
+    width: 55px;
+    margin: auto 32px;
+  }
+
+  .help-volunteer__content {
+    margin-top: 23px;
+    padding-right: 108px;
+  }
+
+  .volunteer-content__image-wrapper {
+    bottom: 0;
+    width: 390px;
+    height: 390px;
+  }
+
+  .volunteer-content__text-list {
+    max-width: 323px;
+    margin: 0 0 0 61px;
+  }
+
+  .volunteer-content__title {
+    font-size: 24px;
+  }
+
+  .volunteer-content__text-block {
+    margin-top: 23px;
+  }
+
+  .volunteer-content__link {
+    margin-top: 29px;
+  }
+  /* /Волонтёрство */
+
+
+  /* Новости */
+  .main__news {
+    width: 1024px;
+    min-height: 496px;
+  }
+
+  .news__content {
+    width: 708px;
+    margin-top: 38px;
+  }
+
+  .pet-news__title {
+    font-size: 24px;
+  }
+
+  .pet-news__content {
+    width: 595px;
+    margin: 26px 0 0 113px;
+  }
+
+  .news-content__image {
+    width: 147px;
+  }
+
+  .news-content__text-block {
+    width: 443px;
+    margin-left: 18px;
+  }
+
+  .pet-news__link {
+    margin-top: 24px;
+    margin-left: 113px;
+  }
+  /* /Новости */
+
+
+  /* О нас */
+  .main__about {
+    width: 1024px;
+    min-height: 580px;
+  }
+
+  .about-us__content {
+    width: 570px;
+    margin-top: 46px;
+  }
+
+  .about-us-content__title {
+    font-size: 24px;
+  }
+
+  .about-us-content__text {
+    margin-top: 31px;
+    margin-left: 89px;
+    font-size: 16px;
+  }
+
+  .about-us-content__contacts-block {
+    margin-top: 24px;
+    margin-left: 89px;
+  }
+
+  .contacts-list__item {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .about-us-content__social-block {
+    margin-top: 45px;
+    margin-left: 89px;
+  }
+
+  .social-block__list {
+    margin-top: 24px;
+  }
+  /* /О нас */
+
+
+  /* Благодарность */
+  .main__thanks {
+    width: 1024px;
+    min-height: 555px;
+  }
+
+  .thanks__content {
+    margin-top: 89px;
+    width: 460px;
+    height: 390px;
+  }
+
+  .thanks-content__text {
+    width: 259px;
+    font-size: 48px;
+    line-height: 58px;
+  }
+  /* /Благодарность */
+
+
+  /* Footer */
+  .footer {
+    width: 1024px;
+    min-height: 101px;
+  }
+
+  .footer__content {
+    width: 803px;
+    margin: 23px 110px 0 110px;
+  }
+
+  .footer-content__navigation {
+    width: 803px;
+    margin-left: 0;
+  }
+
+  .footer-content__info {
+    width: 122px;
+    margin-top: 23px;
+  }
+  
+  .footer-content__text {
+    text-align: right;
+  }
+  /* /Footer */
+}
+
+
+/* ---------------------------------------------------------- */
+
+
+@media (max-width: 1023px) {
+  /* Background images */
+  .background {
+    width: 768px;
+  }
+
+  .first-picture {
+    left: 314px;
+  }
+
+  .second-picture {
+    top: 256px;
+    left: 350px;
+  }
+
+  .background__text {
+    top: 193px;
+    width: 423px;
+  }
+  /* /Background images */
+
+
+  /* Header */
+  .header {
+    width: 768px;
+    min-height: 64px;
+  }
+
+  .header__content {
+    width: 501px;
+    margin-top: 24px;
+  }
+
+  .header-content__burger-menu-image {
+    display: block;
+  }
+
+  .header-content__burger-menu-image:focus {
+    outline: none;
+  }
+
+  .header-content__burger-menu-image:focus-visible {
+    outline: 2px solid #6b6b6b;
+  }
+
+  .header-content__burger-menu-image:focus +
+  .header-content__navigation {
+    transform: translateY(383px);
+  }
+
+    /* Навигация */
+    .header-content__navigation {
+      position: absolute;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      top: -383px;
+      left: 0;
+      width: 768px;
+      height: 383px;
+      padding: 0 110px;
+      background-image: linear-gradient(#ffc41e 20.9%, white 20.9%);
+      z-index: 1;
+      transition: transform 0.2s;
+    }
+
+    .header-content__navigation:hover {
+      transform: translateY(383px);
+    }
+
+    .header-content__navigation::before {
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: 110px;
+      display: block;
+      width: 40px;
+      height: 40px;
+      background-image: url(../images/svg/icon__burger-close.svg);
+      background-position: center;
+    }
+
+    .header-content__navigation::before:active {
+      transform: translateY(0px);
+    }
+
+    .header-nav__list {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .header-nav__list:first-child {
+      margin-top: 90px;
+    }
+
+    .header-nav__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 68px;
+      margin-right: 0;
+      background-image: linear-gradient(transparent 99%, #eebf3a 1px);
+    }
+
+    .header-nav__list:last-of-type .header-nav__item:last-child {
+      background: unset;
+    }
+
+    .header-nav__link {
+      padding: 17px 54px 16px 54px;
+    }
+    /* /Навигация */
+
+    /* Социальные сети */
+    .header-social__link {
+      width: 40px;
+      height: 40px;
+    }
+
+    .header-social__image {
+      width: 24px;
+    }
+    /* /Социальные сети */
+
+  /* /Header */
+
+
+  /* save_life */
+  .main__save-life {
+    width: 768px;
+    min-height: 471px;
+  }
+
+  .save-life__content {
+    width: 311px;
+    margin-top: 12px;
+  }
+
+  .save-life__title {
+    font-size: 42px;
+    line-height: 51px;
+  }
+
+  .save-life__text--text-light {
+    margin-top: 6px;
+  }
+
+  .save-life__text--text-bold {
+    margin-top: 7px;
+  }
+
+  .save-life__text--modify-text {
+    margin-top: 39px;
+    width: 204px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  /* /save-life */
+
+
+  /* Описание */
+  .main__description {
+    width: 768px;
+    min-height: 523px;
+  }
+
+  .description__content {
+    margin-top: 24px;
+    justify-content: flex-end;
+  }
+
+  .description-content__images {
+    width: 289px;
+    height: 284px;
+  }
+
+  .description-content__img--img1-modify {
+    border-width: 11px;
+  }
+
+  .description-content__img--img2-modify {
+    border-width: 4px;
+  }
+
+  .description-content__text-list {
+    width: 264px;
+    margin: 11px 110px 0 39px;
+  }
+
+  .description-content__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .description-content__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .description-content__text--text1-margin {
+    margin-top: 35px;
+  }
+  /* /Описание */
+
+
+  /* Как помочь? */
+  .main__how-help {
+    width: 768px;
+    min-height: 586px;
+  }
+
+  .how-help__content {
+    width: 472px;
+    margin: 64px 148px 0 148px;
+  }
+
+  .how-help__title {
+    font-size: 24px;
+  }
+
+  .how-help__item:nth-child(n+4) {
+    margin: 32px 0 0 83px;
+    justify-self: center;
+  }
+
+  .how-help__item:last-child {
+    margin-left: 0;
+    margin-right: 83px;
+  }
+  /* /Как помочь? */
+
+
+  /* Приручение */
+  .main__taming {
+    width: 768px;
+    min-height: 2907px;
+  }
+
+  .taming__image-wrapper {
+    height: 62px;
+  }
+
+  .taming__image {
+    width: 63px;
+    margin: auto 26px;
+  }
+
+  .taming__content {
+    width: 768px;
+    margin-top: 43px;
+  }
+
+  .taming-content__text-list {
+    width: 426px;
+    margin: 0 157px 0 185px;
+  }
+
+  .taming-text-list__text-wrapper {
+    width: 189px;
+  }
+
+  .taming-text-list__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .taming-text-list__text {
+    margin-top: 11px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .taming-text-list__text--margin {
+    margin-top: 35px;
+  }
+
+  .taming-content__cards {
+    width: 368px;
+    margin: 48px auto 0 auto;
+  }
+
+  .pet-list__item:nth-child(n+2) {
+    margin-top: 44px;
+  }
+
+  .pet-list__item:nth-child(n+4) {
+    display: none;
+  }
+
+  .taming-content__social {
+    width: 501px;
+    margin: 56px 157px 0 110px;
+  }
+
+  .taming-social__text {
+    width: 379px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .taming-social__link {
+    width: 40px;
+    height: 40px;
+  }
+
+  .taming-social__image {
+    width: 24px;
+  }
+  /* /Приручение */
+
+
+  /* Финансовая поддержка */
+  .main__help-fund {
+    width: 768px;
+    min-height: 655px;
+  }
+
+  .help-fund__image-wrapper {
+    height: 54px;
+    margin-top: 16px;
+  }
+
+  .help-fund__image {
+    width: 55px;
+    margin: auto 30px;
+  }
+
+  .help-fund__content {
+    max-width: 548px;
+  }
+
+  .fund-content__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .fund-content__text {
+    width: 358px;
+    margin-top: 17px;
+  }
+
+  .fund-content__wrapper {
+    margin-top: 37px;
+  }
+
+  .fund-content__bank {
+    max-width: 237px;
+    margin-left: 47px;
+  }
+
+  .bank-details__title {
+    font-size: 20px;
+  }
+
+  .bank-details__link {
+    margin-top: 21px;
+  }
+
+  .fund-content__fund-boxes {
+    width: 237px;
+  }
+
+  .fund-boxes__title {
+    font-size: 20px;
+  }
+
+  .fund-boxes__list {
+    margin-top: 24px;
+  }
+  /* /Финансовая поддержка */
+
+
+  /* Чем можно помочь */
+  .main__help-items {
+    width: 768px;
+    min-height: 862px;
+  }
+
+  .help-items__image-wrapper {
+    height: 55px;
+  }
+
+  .help-items__image {
+    width: 54px;
+    margin: auto 30px;
+  }
+
+  .help-items__content {
+    width: 398px;
+    margin-top: 29px;
+    padding-left: 0;
+  }
+
+  .items-feed__title {
+    font-size: 20px;
+  }
+
+  .items-feed__list {
+    margin-top: 28px;
+  }
+
+  .items-feed__item {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .items-feed__list li:nth-child(n+2) {
+    margin-top: 0px;
+  }
+
+  .items-content__medicines {
+    margin-top: 42px;
+  }
+
+  .item-medicines__title {
+    font-size: 20px;
+  }
+
+  .item-medicines__text {
+    margin-top: 28px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .items-content__other {
+    margin-top: 41px;
+  }
+
+  .items-other__title {
+    font-size: 20px;
+  }
+
+  .items-other__list {
+    margin-top: 28px;
+  }
+
+  .items-other__item {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .items-other__list li:nth-child(n+2) {
+    margin-top: 0px;
+  }
+
+  .items-content__link {
+    margin-top: 30px;
+  }
+  /* /Чем можно помочь */
+
+
+  /* Автопомощь */
+  .main__help-transport {
+    width: 768px;
+    min-height: 363px;
+  }
+
+  .help-transport__image-wrapper {
+    height: 55px;
+    margin-top: 0;
+  }
+
+  .help-transport__image {
+    width: 52px;
+  }
+
+  .help-transport__content {
+    width: 398px;
+    margin-top: 25px;
+    padding-left: 0;
+  }
+
+  .content-transport__title {
+    font-size: 20px;
+  }
+
+  .content-transport__text {
+    margin-top: 24px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .content-transport__link {
+    margin-top: 38px;
+  }
+  /* /Автопомощь */
+
+
+  /* Волонтёрство */
+  .main__help-volunteer {
+    width: 768px;
+    min-height: 562px;
+  }
+
+  .help-volunteer__image-wrapper {
+    height: 54px;
+    margin-top: 0px;
+  }
+
+  .help-volunteer__image {
+    width: 35px;
+  }
+
+  .help-volunteer__content {
+    margin-top: 40px;
+    padding-right: 104px;
+  }
+
+  .volunteer-content__image-wrapper {
+    width: 300px;
+    height: 300px;
+  }
+
+  .volunteer-content__text-list {
+    max-width: 217px;
+    margin-left: 40px;
+  }
+
+  .volunteer-content__title {
+    font-size: 20px;
+  }
+
+  .volunteer-content__text-block {
+    margin-top: 24px;
+  }
+
+  .volunteer-content__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .volunteer-content__text-block p:nth-child(n+2) {
+    margin-top: 0px;
+  }
+
+  .volunteer-content__link {
+    margin-top: 39px;
+  }
+  /* /Волонтёрство */
+
+
+  /* Новости */
+  .main__news {
+    width: 768px;
+    min-height: 469px;
+  }
+
+  .news__content {
+    width: 494px;
+    margin-top: 26px;
+  }
+
+  .pet-news__content {
+    width: 426px;
+    margin: 28px 0 0 68px;
+  }
+
+  .pet-news__content:nth-of-type(n+2) {
+    margin-top: 38px;
+  }
+
+  .news-content__image {
+    width: 104px;
+    height: 104px;
+  }
+
+  .news-content__text-block {
+    width: 304px;
+  }
+
+  .news-content__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .news-content__text-block p:nth-child(n+2) {
+    margin-top: 0px;
+  }
+
+  .pet-news__link {
+    margin-top: 35px;
+    margin-left: 68px;
+  }
+  /* /Новости */
+
+
+  /* О нас */
+  .main__about {
+    width: 768px;
+    min-height: 515px;
+  }
+
+  .about-us__content {
+    width: 494px;
+    margin-top: 49px;
+  }
+
+  .about-us-content__title {
+    font-size: 20px;
+  }
+
+  .about-us-content__text {
+    margin-top: 32px;
+    margin-left: 48px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .about-us-content__contacts-block {
+    margin-top: 25px;
+    margin-left: 48px;
+  }
+
+  .contacts-block__text {
+    font-size: 18px;
+  }
+
+  .contacts-block__contacts {
+    margin-top: 16px;
+  }
+
+  .contacts-block__contacts li:nth-child(n+2) {
+    margin-top: 0px;
+  }
+
+  .about-us-content__social-block {
+    margin-top: 36px;
+    margin-left: 48px;
+  }
+
+  .social-list__link {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social-list__image {
+    width: 24px;
+  }
+  /* /О нас */
+
+
+  /* Благодарность */
+  .main__thanks {
+    width: 768px;
+    min-height: 416px;
+  }
+
+  .thanks__content {
+    margin-top: 67px;
+    width: 345px;
+    height: 292px;
+  }
+
+  .thanks-content__text {
+    width: 194px;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  /* /Благодарность */
+
+
+  /* Footer */
+  .footer {
+    width: 768px;
+    min-height: 171px;
+  }
+
+  .footer__content {
+    width: 548px;
+    margin-top: 23px;
+  }
+
+  .footer-content__navigation {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 389px;
+    height: 92px;
+  }
+
+  .footer-nav__item:nth-child(n+2):not(:nth-child(4)) {
+    margin-top: 19px;
+  }
+
+  .footer-nav__item:nth-child(n+4) {
+    margin-left: 53px;
+  }
+
+  .footer-content__info {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 61px;
+    margin-top: 0px;
+    text-align: right;
+  }
+
+  .footer-info__item:nth-child(n+2) {
+    margin-top: 18px;
+  }
+
+  .footer-content__text {
+    margin-top: 22px;
+    text-align: center;
+  }
+  /* /Footer */
+}
+
+
+/* ---------------------------------------------------------- */
+
+
+@media (max-width: 767px) {
+  /* Background images */
+  .background {
+    width: 640px;
+  }
+
+  .first-picture {
+    left: 328px;
+  }
+
+  .second-picture {
+    top: 251px;
+    left: 380px;
+  }
+
+  .background__text {
+    top: 178px;
+    left: 13px;
+    width: 385px;
+  }
+  /* /Background images */
+
+
+  /* header */
+  .header {
+    width: 640px;
+    min-height: 56px;
+  }
+
+  .header__content {
+    width: 382px;
+    margin: 24px 129px 0 129px;
+  }
+
+  .header-content__burger-menu-image {
+    width: 32px;
+    height: 32px;
+  }
+
+  .header-content__burger-menu-image:focus +
+  .header-content__navigation {
+    transform: translateY(320px);
+  }
+
+    /* Навигация */
+    .header-content__navigation {
+      top: -320px;
+      width: 640px;
+      height: 320px;
+      background-image: linear-gradient(#ffc41e 20%, white 20%);
+    }
+
+    .header-content__navigation:hover {
+      transform: translateY(320px);
+    }
+
+    .header-content__navigation::before {
+      left: 30px;
+      width: 32px;
+      height: 32px;
+    }
+
+    .header-nav__list:first-child {
+      margin-top: 64px;
+    }
+
+    .header-nav__item {
+      height: 62px;
+    }
+
+    .header-nav__link {
+      padding: 14px 54px 13px 54px;
+    }
+    /* /Навигация */
+
+    /* Социальные сети */
+    .header-social__item:last-child {
+      margin-left: 22px;
+    }
+
+    .header-social__link {
+      width: 32px;
+      height: 32px;
+      border-width: 1px;
+    }
+
+    .header-social__image {
+      width: 18px;
+    }
+    /* /Социальные сети */
+  
+  /* /header */
+
+
+  /* save-life */
+  .main__save-life {
+    width: 640px;
+    min-height: 510px;
+  }
+
+  .save-life__content {
+    width: 382px;
+    margin: 20px 129px 0 129px;
+  }
+
+  .save-life__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .save-life__text--text-light {
+    width: 282px;
+    margin-top: 0;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .save-life__text--text-bold {
+    width: 282px;
+    margin-top: 21px;
+  }
+
+  .save-life__text--modify-text {
+    margin-top: 151px;
+    width: 382px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .save-life__link {
+    width: 194px;
+    height: 30px;
+    margin: 20px auto 0 auto;
+    font-size: 18px;
+  }
+  /* /save-life */
+
+
+  /* Описание */
+  .main__description {
+    width: 640px;
+    min-height: 552px;
+  }
+
+  .description__content {
+    flex-wrap: wrap;
+    margin-top: 16px;
+    justify-content: center;
+  }
+
+  .description-content__images {
+    width: 204px;
+    height: 200px;
+  }
+
+  .description-content__img--img1-modify {
+    border-width: 8px;
+  }
+
+  .description-content__img--img2-modify {
+    border-width: 3px;
+  }
+
+  .description-content__text-list {
+    width: 382px;
+    margin: 26px 129px 0 129px;
+  }
+
+  .description-content__title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .description-content__text--text1-margin {
+    margin-top: 17px;
+  }
+
+  .description-content__text--text2-margin {
+    margin-top: 18px;
+  }
+  /* /Описание */
+
+
+  /* Как помочь? */
+  .main__how-help {
+    width: 640px;
+    min-height: 450px;
+  }
+  
+  .how-help__content {
+    width: 458px;
+    margin: 32px 91px 0 91px;
+  }
+
+  .how-help__title {
+    font-size: 18px;
+  }
+
+  .how-help__list {
+    margin-top: 35px;
+  }
+
+  .how-help__item {
+    width: 142px;
+    height: 148px;
+  }
+
+  .how-help__item:nth-child(n+4) {
+    margin: 24px 0 0 79px;
+  }
+
+  .how-help__item:last-child {
+    margin-left: 0;
+    margin-right: 79px;
+  }
+
+  .how-help__link {
+    width: 80px;
+    height: 80px;
+    border-width: 1px;
+  }
+
+  .how-help__text {
+    margin-top: 8px;
+  }
+  /* /Как помочь? */
+
+
+  /* Приручение */
+  .main__taming {
+    width: 640px;
+    min-height: 2597px;
+  }
+
+  .taming__image-wrapper {
+    height: 52px;
+  }
+
+  .taming__image {
+    width: 53px;
+    margin: auto 45px;
+  }
+
+  .taming__content {
+    width: 640px;
+    margin-top: 24px;
+  }
+
+  .taming-content__text-list {
+    flex-direction: column;
+    width: 382px;
+    margin: 0 129px 0 129px;
+  }
+
+  .taming-text-list__text-wrapper {
+    width: 100%;
+  }
+
+  .taming-text-list__text-wrapper:nth-child(n+2) {
+    margin-top: 32px;
+  }
+
+  .taming-text-list__title {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .taming-text-list__text {
+    margin-top: 16px;
+  }
+
+  .taming-text-list__text--margin {
+    margin-top: 16px;
+  }
+
+  .taming-content__cards {
+    width: 300px;
+    margin: 40px auto 0 auto;
+  }
+
+  .pet-list__item:nth-child(n+2) {
+    margin-top: 22px;
+  }
+
+  .pet-cards__title {
+    font-size: 20px;
+  }
+
+  .pet-cards__list {
+    margin-top: 16px;
+  }
+
+  .pet-list__item {
+    width: 300px;
+    height: 613px;
+  }
+
+  .pet-list__card {
+    height: 497px;
+  }
+
+  .pet-list__image {
+    width: 272px;
+    height: 284px;
+    margin-top: 14px;
+    margin-left: 14px;
+  }
+
+  .pet-list__title {
+    margin-top: 2px;
+  }
+
+  .pet-list__delimeter {
+    margin: 1px 14px 0 14px;
+  }
+
+  .pet-list__text {
+    margin: 4px 14px 0 14px;
+  }
+
+  .pet-list__button {
+    width: 174px;
+    height: 30px;
+    margin-top: 17px;
+    font-size: 18px;
+  }
+
+  .pet-list__button--alt-style {
+    width: 242px;
+    margin-top: 20px;
+  }
+
+  .pet-cards__link {
+    margin-top: 31px;
+  }
+
+  .taming-content__social {
+    flex-wrap: wrap;
+    width: 382px;
+    margin: 48px 129px 0 129px;
+  }
+
+  .taming-social__text {
+    width: 382px;
+  }
+
+  .taming-social__list {
+    justify-content: center;
+    flex-grow: 1;
+    margin-top: 6px;
+  }
+
+  .taming-social__item:last-child {
+    margin-left: 48px;
+  }
+
+  .taming-social__link {
+    width: 32px;
+    height: 32px;
+    border-width: 1px;
+  }
+
+  .taming-social__image {
+    width: 18px;
+  }
+  /* /Приручение */
+
+
+  /* Финансовая поддержка */
+  .main__help-fund {
+    width: 640px;
+    min-height: 740px;
+  }
+
+  .help-fund__image-wrapper {
+    height: 46px;
+    margin-top: 16px;
+  }
+
+  .help-fund__image {
+    width: 47px;
+    margin: auto 48px;
+  }
+
+  .help-fund__content {
+    max-width: 382px;
+    margin-top: 24px;
+  }
+
+  .fund-content__title {
+    font-size: 16px;
+  }
+
+  .fund-content__text {
+    width: 100%;
+    margin-top: 13px;
+    text-align: center;
+  }
+
+  .fund-content__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .fund-content__bank {
+    max-width: 100%;
+    margin-left: 0px;
+  }
+
+  .bank-details__list {
+    margin-top: 11px;
+  }
+
+  .bank-details__link {
+    width: 194px;
+    height: 30px;
+    margin: 15px auto 0 auto;
+    font-size: 18px;
+  }
+
+  .fund-content__fund-boxes {
+    width: 100%;
+    margin-top: 33px;
+  }
+
+  .fund-boxes__list {
+    margin-top: 16px;
+  }
+  /* /Финансовая поддержка */
+
+
+  /* Чем можно помочь */
+  .main__help-items {
+    width: 640px;
+    min-height: 809px;
+  }
+
+  .help-items__image-wrapper {
+    height: 47px;
+    margin-top: 32px;
+  }
+
+  .help-items__image {
+    width: 46px;
+    margin: auto 49px;
+  }
+
+  .help-items__content {
+    width: 382px;
+    margin-top: 25px;
+  }
+
+  .items-feed__title {
+    font-size: 16px;
+  }
+
+  .items-feed__list {
+    margin-top: 17px;
+  }
+
+  .items-content__medicines {
+    margin-top: 38px;
+  }
+
+  .item-medicines__title {
+    font-size: 16px;
+  }
+
+  .item-medicines__text {
+    margin-top: 17px;
+  }
+
+  .items-content__other {
+    margin-top: 36px;
+  }
+
+  .items-other__title {
+    font-size: 16px;
+  }
+
+  .items-other__list {
+    margin-top: 17px;
+  }
+
+  .items-content__link {
+    display: block;
+    margin-top: 27px;
+    text-align: center;
+  }
+  /* /Чем можно помочь */
+
+
+  /* Автопомощь */
+  .main__help-transport {
+    width: 640px;
+    min-height: 297px;
+  }
+
+  .help-transport__image-wrapper {
+    height: 47px;
+  }
+
+  .help-transport__image {
+    width: 44px;
+    margin: auto 51px;
+  }
+
+  .help-transport__content {
+    width: 382px;
+    margin-top: 27px;
+  }
+
+  .content-transport__title {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .content-transport__text {
+    margin-top: 19px;
+  }
+
+  .content-transport__link {
+    width: 194px;
+    height: 30px;
+    margin: 16px auto 0 auto;
+    font-size: 18px;
+  }
+  /* /Автопомощь */
+
+
+  /* Волонтёрство */
+  .main__help-volunteer {
+    width: 640px;
+    min-height: 604px;
+  }
+
+  .help-volunteer__image-wrapper {
+    height: 46px;
+  }
+
+  .help-volunteer__image {
+    width: 30px;
+    margin: auto 57px;
+  }
+
+  .help-volunteer__content {
+    flex-wrap: wrap;
+    margin-top: 24px;
+    padding-right: 0;
+  }
+
+  .volunteer-content__image-wrapper {
+    width: 212px;
+    height: 212px;
+  }
+
+  .volunteer-content__text-list {
+    max-width: 100%;
+    margin: 27px 129px 0 129px;
+  }
+
+  .volunteer-content__title {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .volunteer-content__text-block {
+    margin-top: 19px;
+  }
+
+  .volunteer-content__link {
+    width: 194px;
+    height: 30px;
+    margin: 16px auto 0 auto;
+    font-size: 18px;
+  }
+  /* /Волонтёрство */
+
+
+  /* Новости */
+  .main__news {
+    width: 640px;
+    min-height: 421px;
+  }
+
+  .news__content {
+    width: 382px;
+    margin-top: 19px;
+  }
+
+  .pet-news__title {
+    font-size: 16px;
+  }
+
+  .pet-news__content {
+    width: 100%;
+    margin: 26px 0 0 0;
+  }
+
+  .pet-news__content:nth-of-type(n+2) {
+    margin-top: 24px;
+  }
+
+  .news-content__image {
+    width: 79px;
+    height: 79px;
+    margin: 0;
+  }
+
+  .news-content__text-block {
+    width: 287px;
+  }
+
+  .pet-news__link {
+    display: block;
+    margin-top: 27px;
+    margin-left: 0;
+    text-align: center;
+  }
+  /* /Новости */
+
+
+  /* О нас */
+  .main__about {
+    width: 640px;
+    min-height: 440px;
+  }
+
+  .about-us__content {
+    width: 382px;
+    margin-top: 35px;
+  }
+
+  .about-us-content__title {
+    font-size: 16px;
+  }
+
+  .about-us-content__text {
+    margin-top: 27px;
+    margin-left: 0;
+  }
+
+  .about-us-content__contacts-block {
+    margin-top: 33px;
+    margin-left: 0;
+  }
+
+  .contacts-block__contacts {
+    margin-top: 18px;
+  }
+
+  .about-us-content__social-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 23px;
+    margin-left: 0;
+  }
+
+  .social-block__text {
+    width: 282px;
+  }
+
+  .social-block__list {
+    margin-top: 0;
+  }
+
+  .social-list__item:last-child {
+    margin-left: 28px;
+  }
+
+  .social-list__link {
+    width: 24px;
+    height: 24px;
+    border-width: 1px;
+  }
+
+  .social-list__image {
+    width: 14px;
+  }
+  /* /О нас */
+
+
+  /* Благодарность */
+  .main__thanks {
+    width: 640px;
+    min-height: 360px;
+  }
+
+  .thanks__content {
+    margin-top: 74px;
+    width: 250px;
+    height: 212px;
+  }
+
+  .thanks-content__text {
+    width: 158px;
+    margin: auto 62px auto 30px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  /* /Благодарность */
+
+
+  /* Footer */
+  .footer {
+    width: 640px;
+    min-height: 249px;
+  }
+
+  .footer__content {
+    width: 382px;
+    margin: 23px auto 0 auto;
+  }
+
+  .footer-content__navigation {
+    width: 228px;
+    height: 166px;
+  }
+
+  .footer-nav__item:nth-child(n+2) {
+    margin-top: 19px;
+  }
+
+  .footer-nav__item:nth-child(n+4) {
+    margin-left: 0;
+  }
+
+  .footer-content__text {
+    margin-top: 26px;
+  }
+  /* /Footer */
+}
+
+
+/* ---------------------------------------------------------- */
+
+
+@media (max-width: 639px) {
+  /* Background images */
+  .background {
+    width: 360px;
+  }
+
+  .first-picture {
+    left: 135px;
+  }
+
+  .second-picture {
+    left: 144px;
+  }
+
+  .background__text {
+    top: 270px;
+    left: 0px;
+    width: 217px;
+  }
+  /* /Background images */
+
+
+  /* header */
+  .header {
+    width: 360px;
+  }
+
+  .header__content {
+    width: 300px;
+    margin: 24px 30px 0 30px;
+  }
+
+  .header-content__burger-menu-image:focus +
+  .header-content__navigation {
+    transform: translateY(367px);
+  }
+
+    /* Навигация */
+    .header-content__navigation {
+      top: -367px;
+      width: 360px;
+      height: 367px;
+      padding: 0 67px;
+      background-image: linear-gradient(#ffc41e 64px, white 64px);
+    }
+
+    .header-content__navigation:hover {
+      transform: translateY(367px);
+    }
+
+    .header-nav__list:first-child {
+      margin-top: 74px;
+    }
+
+    .header-nav__item {
+      height: 68px;
+    }
+
+    .header-nav__link {
+      padding: 17px 10px 16px 10px;
+    }
+    /* /Навигация */
+
+  /* /header */
+
+  /* save-life */
+  .main__save-life {
+    width: 360px;
+  }
+
+  .save-life__content {
+    width: 300px;
+    margin: 20px 30px 0 30px;
+  }
+
+  .save-life__text--text-light {
+    width: 211px;
+  }
+
+  .save-life__text--text-bold {
+    width: 158px;
+  }
+
+  .save-life__text--modify-text {
+    margin-top: 91px;
+    width: 100%;
+  }
+  /* /save-life */
+
+
+  /* Описание */
+  .main__description {
+    width: 360px;
+    min-height: 632px;
+  }
+
+  .description-content__text-list {
+    width: 100%;
+    margin: 26px 30px 0 30px;
+  }
+
+  .description-content__text--text2-margin {
+    margin-top: 17px;
+  }
+  /* /Описание */
+
+
+  /* Как помочь? */
+  .main__how-help {
+    width: 360px;
+    min-height: 612px;
+  }
+
+  .how-help__content {
+    width: 300px;
+    margin: 32px 30px 0 30px;
+  }
+
+  .how-help__list {
+    margin-top: 25px;
+  }
+
+  .how-help__item:nth-child(n+3) {
+    margin: 24px 0 0 0px;
+  }
+
+  .how-help__item:last-child {
+    margin-left: 79px;
+    margin-right: 0;
+  }
+  /* /Как помочь? */
+
+
+  /* Приручение */
+  .main__taming {
+    width: 360px;
+    min-height: 2679px;
+  }
+
+  .taming__content {
+    width: 360px;
+  }
+
+  .taming-content__text-list {
+    width: 300px;
+    margin: 0 30px 0 30px;
+  }
+
+  .taming-content__social {
+    width: 300px;
+    margin: 48px 30px 0 30px;
+  }
+  /* /Приручение */
+
+
+  /* Финансовая поддержка */
+  .main__help-fund {
+    width: 360px;
+    min-height: 820px;
+  }
+
+  .help-fund__content {
+    max-width: 300px;
+  }
+  /* /Финансовая поддержка */
+
+
+  /* Чем можно помочь */
+  .main__help-items {
+    width: 360px;
+    min-height: 933px;
+  }
+
+  .help-items__content {
+    width: 300px;
+  }
+
+  .items-content__feed {
+    max-width: 295px;
+  }
+
+  .items-content__other {
+    max-width: 294px;
+    margin-top: 35px;
+  }
+
+  .items-content__link {
+    margin-top: 31px;
+  }
+  /* /Чем можно помочь */
+
+
+  /* Автопомощь */
+  .main__help-transport {
+    width: 360px;
+    min-height: 317px;
+  }
+
+  .help-transport__content {
+    width: 300px;
+  }
+  /* /Автопомощь */
+
+
+  /* Волонтёрство */
+  .main__help-volunteer {
+    width: 360px;
+    min-height: 647px;
+  }
+
+  .volunteer-content__text-list {
+    margin: 27px 30px 0 30px;
+  }
+
+  .volunteer-content__link {
+    margin-top: 19px;
+  }
+  /* /Волонтёрство */
+
+
+  /* Новости */
+  .main__news {
+    width: 360px;
+    min-height: 532px;
+  }
+
+  .news__content {
+    width: 300px;
+  }
+
+  .pet-news__content {
+    margin-top: 27px;
+  }
+
+  .pet-news__content:nth-of-type(n+2) {
+    margin-top: 19px;
+  }
+  
+  .news-content__text-block {
+    width: 205px;
+  }
+
+  .pet-news__link {
+    margin-top: 22px;
+  }
+  /* /Новости */
+
+
+  /* О нас */
+  .main__about {
+    width: 360px;
+    min-height: 482px;
+  }
+
+  .about-us__content {
+    width: 300px;
+  }
+
+  .about-us-content__social-block {
+    margin-top: 25px;
+  }
+
+  .social-list__item:last-child {
+    margin-left: 24px;
+  }
+
+  .social-list__link {
+    width: 32px;
+    height: 32px;
+  }
+
+  .social-list__image {
+    width: 18px;
+  }
+  /* /О нас */
+
+
+  /* Благодарность */
+  .main__thanks {
+    width: 360px;
+    min-height: 267px;
+  }
+
+  .thanks__content {
+    margin-top: 39px;
+  }
+  /* /Благодарность */
+
+
+  /* Footer */
+  .footer {
+    width: 360px;
+  }
+
+  .footer__content {
+    width: 300px;
+  }
+  /* /Footer */
+}

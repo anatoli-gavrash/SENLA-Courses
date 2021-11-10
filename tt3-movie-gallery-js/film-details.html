@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/normalize.css">
+    <link rel="stylesheet" href="./stylesheets/fonts.css">
+    <link rel="stylesheet" href="./stylesheets/styles.css">
+    <title>Film Details</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__navigation">
+        <a class="header__home-link" href="./index.html" >
+          <img class="header__home-image" src="./images/home__icon.svg" alt="Иконка дома">
+        </a>
+        <p class="header__user-name">
+          <img class="header__user-picture" src="./images/account__icon.svg"
+          ></p>
+        <a class="header__sign-in" href="./sign-in.html">Sign In/Sign Up</a>
+        <button class="header__logout">Logout</button>
+      </nav>
+    </header>
+
+    <article class="film-details">
+      <h2 class="form-details__title">Информация о фильме</h2>
+      <div class="film-details__wrapper">
+        <img class="film-details__poster" src="#" alt="">
+        <button class="film-details__button-delete"></button>
+        <button class="film-details__button-edit"></button>
+      </div>
+      <section class="film-details__block">
+        <h3 class="film-details__title"></h3>
+        <div class="film-details__items-wrapper">
+          <p class="film-details__text text-rating"></p>
+          <time class="film-details__date" datetime=""></time>
+          <p class="film-details__text text-genres"></p>
+        </div>
+        <p class="film-details__text text-vote-count">Всего голосов: <span></span></p>
+        <p class="film-details__text text-popularity">Популярность: <span></span></p>
+        <p class="film-details__text text-overview">Описание: <span></span></p>
+        <form class="film-details__form form-vote" action="">
+          <div class="form-vote__item-wrapper">
+            <label class="form-vote__label" for="id-vote">Оцените фильм от (0.5 до 10)</label>
+            <input class="form-vote__input"
+              type="text"
+              name="vote"
+              id="id-vote"
+              required>
+            <label class="form-vote__label-error" for="id-vote">Должно быть число от 0.5 до 10</label>
+          </div>
+          <button class="form-vote__button-submit" type="button">Оценить</button>
+        </form>
+      </section>
+    </article>
+    <script src="./scripts/login.js"></script>
+    <script src="./scripts/remove.js"></script>
+    <script src="./scripts/films-details.js"></script>
+  </body>
+</html>

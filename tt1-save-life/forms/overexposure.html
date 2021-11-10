@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link href="../stylesheets/normalize.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets/fonts.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets/forms__overexposure.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets/animation.css" rel="stylesheet" type="text/css">
+    <title>Забрать на передержку</title>
+  </head>
+  <body>
+    <header>
+    </header>
+
+    <main class="overexposure">
+      <form class="overexposure__form overexposure-form" name="form">
+        <h3 class="overexposure-form__title">Забрать на передержку</h3>
+        <hr class="overexposure-form__delimeter">
+        <p class="overexposure-form__text">Оставьте информацию о себе. Мы позвоним вам и 
+          договоримся, когда вы сможете забрать себе 
+          питомца на передержку.</p>
+        <label class="overexposure-form__label label-full-name" for=id-full-name>Фамилия и имя</label>
+        <input class="overexposure-form__input"
+          type="text"
+          name="full-name"
+          id="id-full-name"
+          placeholder="Введите ваше имя и фамилию"
+          minlength="2"
+          maxlength="56"
+          autofocus>
+        <label class="overexposure-form__label label-phone" for=id-phone>Номер телефона (только белорусский номер)</label>
+        <input class="overexposure-form__input"
+          type="tel"
+          name="phone"
+          id="id-phone"
+          placeholder="Введите ваш номер телефона"
+          minlength="13"
+          maxlength="13"
+          required>
+        <label class="overexposure-form__label label-phone-warning" for="id-phone">Обязательное поле для заполнения</label>
+        <label class="overexposure-form__label label-remarks" for="id-remarks">Замечания</label>
+        <textarea class="overexposure-form__textarea"
+          name="remarks"
+          id="id-remarks"
+          placeholder="Опишите, на какой срок вы смогли бы взять питомца на передержку"
+          maxlength="500"></textarea>
+        <div class="overexposure-form__contacts overexposure-contacts">
+          <p class="overexposure-contacts__text">Если у вас есть вопросы, можете позвонить нам:</p>
+          <a class="overexposure-contacts__link" href="tel:+375336237879">+375 (33) 6237879&nbsp; Лена</a>
+          <a class="overexposure-contacts__link" href="tel:+375297877791">+375 (29) 7877791&nbsp; Ольга</a>
+          <a class="overexposure-contacts__link" href="tel:+375295837015">+375 (29) 5837015&nbsp; Рита</a>
+        </div>
+        <div class="overexposure-form__thanks overexposure-thanks">
+          <p class="overexposure-thanks__text">Наши волонтеры будут активно искать будущий дом 
+            хвостику, пока вы помогаете нам с передержкой.</p>
+          <p class="overexposure-thanks__text">Спасибо за помощь!</p>
+        </div>
+        <div class="overexposure-form__buttons overexposure-button">
+          <input class="overexposure-button__submit" type="submit" name="submit" id="id-submit" value="Отправить">
+          <button class="overexposure-button__cancel">Отмена</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+    </footer>
+  </body>
+</html>

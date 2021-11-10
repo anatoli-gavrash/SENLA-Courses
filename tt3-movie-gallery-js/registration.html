@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/normalize.css">
+    <link rel="stylesheet" href="./stylesheets/fonts.css">
+    <link rel="stylesheet" href="./stylesheets/styles.css">
+    <title>Registration</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__navigation">
+        <a class="header__home-link" href="./index.html" >
+          <img class="header__home-image" src="./images/home__icon.svg" alt="Иконка дома">
+        </a>
+        <p class="header__user-name">
+          <img class="header__user-picture" src="./images/account__icon.svg"
+          ></p>
+        <a class="header__sign-in" href="./sign-in.html">Sign In/Sign Up</a>
+        <button class="header__logout">Logout</button>
+      </nav>
+    </header>
+
+    <section class="registration">
+      <form class="registration__form form-registration" action="">
+        <div class="form-registration__item-wrapper">
+          <label class="form-registration__label" for="id-name">Имя</label>
+          <input class="form-registration__input"
+            type="text"
+            name="name"
+            id="id-name"
+            minlength="7"
+            required>
+          <label class="form-registration__label-error" for="id-name">Имя должно быть больше 6 символов</label>
+          <label class="form-registration__label-error-alt" for="id-name">Такое имя уже есть в базе</label>
+        </div>
+        <div class="form-registration__item-wrapper">
+          <label class="form-registration__label" for="id-surname">Фамилия</label>
+          <input class="form-registration__input"
+            type="text"
+            name="surname"
+            id="id-surname"
+            minlength="7"
+            required>
+          <label class="form-registration__label-error" for="id-surname">Фамилия должна быть больше 6 символов</label>
+        </div>
+        <div class="form-registration__item-wrapper">
+          <label class="form-registration__label" for="id-password">Пароль</label>
+          <input class="form-registration__input"
+            type="password"
+            name="password"
+            id="id-password"
+            minlength="7"
+            required>
+          <label class="form-registration__label-error" for="id-password">Пароль должен быть больше 6 символов</label>
+        </div>
+        <div class="form-registration__item-wrapper">
+          <label class="form-registration__label" for="id-check-password">Повторите пароль</label>
+          <input class="form-registration__input"
+            type="password"
+            name="check-password"
+            id="id-check-password"
+            minlength="7"
+            required>
+          <label class="form-registration__label-error" for="id-check-password">Пароли не совпадают</label>
+        </div>
+        <div class="form-registration__item-wrapper">
+          <label class="form-registration__label" for="id-email">E-Mail</label>
+          <input class="form-registration__input"
+            type="email"
+            name="email"
+            id="id-email"
+            required>
+          <label class="form-registration__label-error" for="id-email">Формат E-Mail (example@mail.com)</user></label>
+          <label class="form-registration__label-error-alt" for="id-email">Такой e-mail уже есть в системе</label>
+        </div>
+        <div class="form-registration__button-wrapper">
+          <button class="form-registration__button" type="button">Submit</button>
+          <button class="form-registration__button form-registration__button--alt" type="reset">Clear</button>
+        </div>
+      </form>
+    </section>
+    <script src="./scripts/login.js"></script>
+    <script src="./scripts/validation.js"></script>
+    <script src="./scripts/registration.js"></script>
+  </body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link href="./stylesheets/normalize.css" rel="stylesheet" type="text/css">
+    <link href="./stylesheets/fonts.css" rel="stylesheet" type="text/css">
+    <link href="./stylesheets/pets.css" rel="stylesheet" type="text/css">
+    <link href="./stylesheets/animation.css" rel="stylesheet" type="text/css">
+    <title>Список питомцев</title>
+  </head>
+
+  <body>
+    <header>
+    </header>
+
+    
+    <main class="main">
+      <section class="main__ward-animals ward-animals">
+        <div class="ward-animals__top-content top-content">
+          <a class="top-content__link" onclick="javascript:history.back(); return false;" href="">
+            <img class="top-content__image" src="./images/svg/pets__back-arrow.svg" alt=""><span>Вернуться назад<span>
+          </a>
+          <h3 class="top-content__title">Наши подопечные</h3>
+          <form class="top-content__sort pets-sort">
+            <label class="pets-sort__label" for="id-pets-sort">Показать</label>
+            <select class="pets-sort__menu" size="1" name="pets-sort" id="id-pets-sort">
+              <option class="pets-sort__item" value="cats-and-dogs">Коты и собаки</option>
+              <option class="pets-sort__item" value="cats">Только коты</option>
+              <option class="pets-sort__item" value="dogs">Только собаки</option>
+            </select>
+          </form>
+        </div>
+        <div class="ward-animals__cards pet-cards">
+          <ul class="pet-cards__list pet-list">
+            <li class="pet-list__item">
+              <figure class="pet-list__card">
+                <img class="pet-list__image" 
+                  src="./images/jpg/pet-list__image1.jpg" 
+                  alt="Маленький бело-рыжий щенок на руках у девушки в желтом свитере.">
+                <figcaption class="pet-list__description">
+                  <h4 class="pet-list__title">Моник</h4>
+                  <hr class="pet-list__delimeter">
+                  <p class="pet-list__text pet-list__text--gray-color">Мальчик, 7 месяцев</p>
+                  <p class="pet-list__text">К поводку приучен. Не агрессивный. В еде не 
+                    привередничает. С другими животными не 
+                    конфликтует. Привит. Очень плачет и хочет на 
+                    ручки. Отдается только в добрые руки и под 
+                    паспорт.</p>
+                </figcaption>
+              </figure>
+              <!-- Ссылки внутри кнопок уберутся после добавления модальных окон -->
+              <button class="pet-list__button">
+                <a class="pet-list__link" tabindex="-1" href="./forms/taming.html">Забрать домой</a>
+              </button>
+              <button class="pet-list__button pet-list__button--alt-style">
+                <a class="pet-list__link" tabindex="-1" href="./forms/overexposure.html">Забрать на передержку</a>
+              </button>
+            </li>
+            <li class="pet-list__item">
+              <figure class="pet-list__card">
+                <img class="pet-list__image"
+                  src="./images/jpg/pet-list__image2.jpg"
+                  alt="Бело-жёлто-чёрная кошка смотрит снизу в объектив камеры.">
+                <figcaption class="pet-list__description">
+                  <h4 class="pet-list__title">Лунатик</h4>
+                  <hr class="pet-list__delimeter">
+                  <p class="pet-list__text pet-list__text--gray-color">Мальчик, 7 месяцев</p>
+                  <p class="pet-list__text">Она не знает, что такое – царапаться и кусаться, 
+                    она не знает, что такое нападать на других 
+                    животных.</p>
+                </figcaption>
+              </figure>
+              <button class="pet-list__button">
+                <a class="pet-list__link" tabindex="-1" href="./forms/taming.html">Забрать домой</a>
+              </button>
+              <button class="pet-list__button pet-list__button--alt-style">
+                <a class="pet-list__link" tabindex="-1" href="./forms/overexposure.html">Забрать на передержку</a>
+              </button>
+            </li>
+            <li class="pet-list__item">
+              <figure class="pet-list__card">
+                <img class="pet-list__image"
+                  src="./images/jpg/pet-list__image3.jpg"
+                  alt="Черно-рыжая собака с интересом и вопросом смотрит в объектив камеры.">
+                <figcaption class="pet-list__description">
+                  <h4 class="pet-list__title">Герда</h4>
+                  <hr class="pet-list__delimeter">
+                  <p class="pet-list__text pet-list__text--gray-color">Мальчик, 7 месяцев</p>
+                  <p class="pet-list__text">К поводку приучен. Не агрессивный. В еде не 
+                    привередничает. С другими животными не 
+                    конфликтует. Привит. Очень плачет и хочет на 
+                    ручки. Отдается только в добрые руки и под 
+                    паспорт.</p>
+                </figcaption>
+              </figure>
+              <button class="pet-list__button">
+                <a class="pet-list__link" tabindex="-1" href="./forms/taming.html">Забрать домой</a>
+              </button>
+              <button class="pet-list__button pet-list__button--alt-style">
+                <a class="pet-list__link" tabindex="-1" href="./forms/overexposure.html">Забрать на передержку</a>
+              </button>
+            </li>
+            <li class="pet-list__item">
+              <figure class="pet-list__card">
+                <img class="pet-list__image"
+                  src="./images/jpg/pet-list__image4.jpg"
+                  alt="Пушистый бело-серый кот смотрит сквозь прутья клетки.">
+                <figcaption class="pet-list__description">
+                  <h4 class="pet-list__title">Саки</h4>
+                  <hr class="pet-list__delimeter">
+                  <p class="pet-list__text pet-list__text--gray-color">Мальчик, 7 месяцев</p>
+                  <p class="pet-list__text">Веселый и очень игривый, ему так нужны ваша 
+                    любовь и ласка.У него потрясающая густая 
+                    шерсть в полосочку, «серьезные» желтые глаза и 
+                    длиннющие белые усы.</p>
+                </figcaption>
+              </figure>
+              <button class="pet-list__button">
+                <a class="pet-list__link" tabindex="-1" href="./forms/taming.html">Забрать домой</a>
+              </button>
+              <button class="pet-list__button pet-list__button--alt-style">
+                <a class="pet-list__link" tabindex="-1" href="./forms/overexposure.html">Забрать на передержку</a>
+              </button>
+            </li>
+            <li class="pet-list__item">
+              <figure class="pet-list__card">
+                <img class="pet-list__image"
+                  src="./images/jpg/pet-list__image5.jpg"
+                  alt="Маленькая собачка коричневого цвета сидит на белом диване.">
+                <figcaption class="pet-list__description">
+                  <h4 class="pet-list__title">Моника</h4>
+                  <hr class="pet-list__delimeter">
+                  <p class="pet-list__text pet-list__text--gray-color">Девочка, 4 месяца</p>
+                  <p class="pet-list__text">Девочке 4 месяца жила в ужасных условиях, 
+                    бывшая хозяйка могла исчезнуть на двое суток 
+                    закрыв её одну в комнате без еды, ей нельзя там 
+                    больше оставаться. Мила очень ласковая, 
+                    забавная, в еде не привередлива.</p>
+                </figcaption>
+              </figure>
+              <button class="pet-list__button">
+                <a class="pet-list__link" tabindex="-1" href="./forms/taming.html">Забрать домой</a>
+              </button>
+              <button class="pet-list__button pet-list__button--alt-style">
+                <a class="pet-list__link" tabindex="-1" href="./forms/overexposure.html">Забрать на передержку</a>
+              </button>
+            </li>
+            <li class="pet-list__item">
+              <figure class="pet-list__card">
+                <img class="pet-list__image"
+                  src="./images/jpg/pet-list__image6.jpg"
+                  alt="Рыже-черная собака валяясь на земле пытается облизать протянутую ей руку.">
+                <figcaption class="pet-list__description">
+                  <h4 class="pet-list__title">Андреантино</h4>
+                  <hr class="pet-list__delimeter">
+                  <p class="pet-list__text pet-list__text--gray-color">Мальчик, 7 месяцев</p>
+                  <p class="pet-list__text">Веселый и очень игривый, ему так нужны ваша 
+                    любовь и ласка.У него потрясающая густая 
+                    шерсть в полосочку, «серьезные» желтые глаза и 
+                    длиннющие белые усы.</p>
+                </figcaption>
+              </figure>
+              <button class="pet-list__button">
+                <a class="pet-list__link" tabindex="-1" href="./forms/taming.html">Забрать домой</a>
+              </button>
+              <button class="pet-list__button pet-list__button--alt-style">
+                <a class="pet-list__link" tabindex="-1" href="./forms/overexposure.html">Забрать на передержку</a>
+              </button>
+            </li>
+            <li class="pet-list__item">
+              <figure class="pet-list__card">
+                <img class="pet-list__image"
+                  src="./images/jpg/pet-list__image4.jpg"
+                  alt="Пушистый бело-серый кот смотрит сквозь прутья клетки.">
+                <figcaption class="pet-list__description">
+                  <h4 class="pet-list__title">Саки</h4>
+                  <hr class="pet-list__delimeter">
+                  <p class="pet-list__text pet-list__text--gray-color">Мальчик, 7 месяцев</p>
+                  <p class="pet-list__text">Веселый и очень игривый, ему так нужны ваша 
+                    любовь и ласка.У него потрясающая густая 
+                    шерсть в полосочку, «серьезные» желтые глаза и 
+                    длиннющие белые усы.</p>
+                </figcaption>
+              </figure>
+              <button class="pet-list__button">
+                <a class="pet-list__link" tabindex="-1" href="./forms/taming.html">Забрать домой</a>
+              </button>
+              <button class="pet-list__button pet-list__button--alt-style">
+                <a class="pet-list__link" tabindex="-1" href="./forms/overexposure.html">Забрать на передержку</a>
+              </button>
+            </li>
+            <li class="pet-list__item">
+              <figure class="pet-list__card">
+                <img class="pet-list__image"
+                  src="./images/jpg/pet-list__image5.jpg"
+                  alt="Маленькая собачка коричневого цвета сидит на белом диване.">
+                <figcaption class="pet-list__description">
+                  <h4 class="pet-list__title">Моника</h4>
+                  <hr class="pet-list__delimeter">
+                  <p class="pet-list__text pet-list__text--gray-color">Девочка, 4 месяца</p>
+                  <p class="pet-list__text">Девочке 4 месяца жила в ужасных условиях, 
+                    бывшая хозяйка могла исчезнуть на двое суток 
+                    закрыв её одну в комнате без еды, ей нельзя там 
+                    больше оставаться. Мила очень ласковая, 
+                    забавная, в еде не привередлива.</p>
+                </figcaption>
+              </figure>
+              <button class="pet-list__button">
+                <a class="pet-list__link" tabindex="-1" href="./forms/taming.html">Забрать домой</a>
+              </button>
+              <button class="pet-list__button pet-list__button--alt-style">
+                <a class="pet-list__link" tabindex="-1" href="./forms/overexposure.html">Забрать на передержку</a>
+              </button>
+            </li>
+            <li class="pet-list__item">
+              <figure class="pet-list__card">
+                <img class="pet-list__image"
+                  src="./images/jpg/pet-list__image6.jpg"
+                  alt="Рыже-черная собака валяясь на земле пытается облизать протянутую ей руку.">
+                <figcaption class="pet-list__description">
+                  <h4 class="pet-list__title">Андреантино</h4>
+                  <hr class="pet-list__delimeter">
+                  <p class="pet-list__text pet-list__text--gray-color">Мальчик, 7 месяцев</p>
+                  <p class="pet-list__text">Веселый и очень игривый, ему так нужны ваша 
+                    любовь и ласка.У него потрясающая густая 
+                    шерсть в полосочку, «серьезные» желтые глаза и 
+                    длиннющие белые усы.</p>
+                </figcaption>
+              </figure>
+              <button class="pet-list__button">
+                <a class="pet-list__link" tabindex="-1" href="./forms/taming.html">Забрать домой</a>
+              </button>
+              <button class="pet-list__button pet-list__button--alt-style">
+                <a class="pet-list__link" tabindex="-1" href="./forms/overexposure.html">Забрать на передержку</a>
+              </button>
+            </li>
+            <li class="pet-list__item">
+              <figure class="pet-list__card">
+                <img class="pet-list__image"
+                  src="./images/jpg/pet-list__image4.jpg"
+                  alt="Пушистый бело-серый кот смотрит сквозь прутья клетки.">
+                <figcaption class="pet-list__description">
+                  <h4 class="pet-list__title">Саки</h4>
+                  <hr class="pet-list__delimeter">
+                  <p class="pet-list__text pet-list__text--gray-color">Мальчик, 7 месяцев</p>
+                  <p class="pet-list__text">Веселый и очень игривый, ему так нужны ваша 
+                    любовь и ласка.У него потрясающая густая 
+                    шерсть в полосочку, «серьезные» желтые глаза и 
+                    длиннющие белые усы.</p>
+                </figcaption>
+              </figure>
+              <button class="pet-list__button">
+                <a class="pet-list__link" tabindex="-1" href="./forms/taming.html">Забрать домой</a>
+              </button>
+              <button class="pet-list__button pet-list__button--alt-style">
+                <a class="pet-list__link" tabindex="-1" href="./forms/overexposure.html">Забрать на передержку</a>
+              </button>
+            </li>
+            <li class="pet-list__item">
+              <figure class="pet-list__card">
+                <img class="pet-list__image"
+                  src="./images/jpg/pet-list__image5.jpg"
+                  alt="Маленькая собачка коричневого цвета сидит на белом диване.">
+                <figcaption class="pet-list__description">
+                  <h4 class="pet-list__title">Моника</h4>
+                  <hr class="pet-list__delimeter">
+                  <p class="pet-list__text pet-list__text--gray-color">Девочка, 4 месяца</p>
+                  <p class="pet-list__text">Девочке 4 месяца жила в ужасных условиях, 
+                    бывшая хозяйка могла исчезнуть на двое суток 
+                    закрыв её одну в комнате без еды, ей нельзя там 
+                    больше оставаться. Мила очень ласковая, 
+                    забавная, в еде не привередлива.</p>
+                </figcaption>
+              </figure>
+              <button class="pet-list__button">
+                <a class="pet-list__link" tabindex="-1" href="./forms/taming.html">Забрать домой</a>
+              </button>
+              <button class="pet-list__button pet-list__button--alt-style">
+                <a class="pet-list__link" tabindex="-1" href="./forms/overexposure.html">Забрать на передержку</a>
+              </button>
+            </li>
+            <li class="pet-list__item">
+              <figure class="pet-list__card">
+                <img class="pet-list__image"
+                  src="./images/jpg/pet-list__image6.jpg"
+                  alt="Рыже-черная собака валяясь на земле пытается облизать протянутую ей руку.">
+                <figcaption class="pet-list__description">
+                  <h4 class="pet-list__title">Андреантино</h4>
+                  <hr class="pet-list__delimeter">
+                  <p class="pet-list__text pet-list__text--gray-color">Мальчик, 7 месяцев</p>
+                  <p class="pet-list__text">Веселый и очень игривый, ему так нужны ваша 
+                    любовь и ласка.У него потрясающая густая 
+                    шерсть в полосочку, «серьезные» желтые глаза и 
+                    длиннющие белые усы.</p>
+                </figcaption>
+              </figure>
+              <button class="pet-list__button">
+                <a class="pet-list__link" tabindex="-1" href="./forms/taming.html">Забрать домой</a>
+              </button>
+              <button class="pet-list__button pet-list__button--alt-style">
+                <a class="pet-list__link" tabindex="-1" href="./forms/overexposure.html">Забрать на передержку</a>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+
+    <footer class="footer">
+      <div class="footer__content footer-content">
+        <ul class="footer-content__navigation footer-nav">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="./index.html#taming">Дом или передержка</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="./index.html#help-fund">Финансовая поддержка</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="./index.html#help-items">Корма, лекарства и другие вещи</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="./index.html#help-transport">Автопомощь</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="./index.html#help-volunteer">Волонтёрство</a>
+          </li>
+        </ul>
+        <ul class="footer-content__info footer-info">
+          <li class="footer-info__item">
+            <a class="footer-info__link" href="./index.html#about-us">О нас</a>
+          </li>
+          <li class="footer-info__item">
+            <a class="footer-info__link" href="./index.html#contacts">Контакты</a>
+          </li>
+        </ul>
+        <p class="footer-content__text">© 2020 БООЗЖ "СПАСИ ЖИЗНЬ"</p>
+      </div>
+    </footer>
+  </body>
+</html>

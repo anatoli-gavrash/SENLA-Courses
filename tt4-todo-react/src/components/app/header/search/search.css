@@ -1,0 +1,24 @@
+.header__form {
+  position: relative;
+  max-width: 582px;
+  margin-left: 20px;
+  flex-grow: 1;
+}
+
+.header__search-image {
+  position: absolute;
+  top: 15px;
+  left: 14px;
+  width: 12px;
+  height: 12px;
+}
+
+.header__search-field {
+  width: 100%;
+  height: 40px;
+  padding-left: 38px;
+  padding-right: 10px;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.1);
+}

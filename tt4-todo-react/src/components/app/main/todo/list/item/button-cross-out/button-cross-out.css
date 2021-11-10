@@ -1,0 +1,43 @@
+.tasks__text {
+  flex-grow: 1;
+  padding-top: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  color: #53565A;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.tasks__star {
+  display: none;
+  height: 10px;
+  font-size: 27px;
+  line-height: 10px;
+}
+
+.complete .tasks__text {
+  text-decoration: line-through;
+}
+
+.complete .tasks__text .tasks__star {
+  background-image: linear-gradient(transparent 82%, black 82%, transparent 90%);
+}
+
+.important .tasks__text .tasks__star {
+  display: inline-block;
+}
+
+.important .tasks__text {
+  font-weight: 700;
+}
+
+@media (max-width: 480px) {
+  .tasks__text {
+    max-height: 40px;
+    -webkit-line-clamp: 2;
+  }
+}

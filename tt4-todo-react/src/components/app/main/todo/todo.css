@@ -1,0 +1,13 @@
+.main__tasks {
+  max-width: 803px;
+  margin-top: 20px;
+  margin-left: 1.4%;
+}
+
+.tasks__title {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}

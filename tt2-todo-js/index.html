@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/normalize.css">
+    <link rel="stylesheet" href="./stylesheets/fonts.css">
+    <link rel="stylesheet" href="./stylesheets/styles.css">
+    <title>SENLA. Your tasks</title>
+  </head>
+
+  <body>
+    <img class="background-image"
+      src="./images/svg/taking__notes.svg"
+      alt="Мужчина в светло-синем костюме вешает заметку на импровизированную стену задач.">
+    <header class="header">
+      <h1 class="header__title">SENLA. Tasks for everyone</h1>
+      <img class="header__logo" src="./images/svg/senla-logo.svg" alt="Логотип компании SENLA">
+      <form class="header__form" id="id-search-form">
+        <input class="header__search-field"
+          type="search"
+          placeholder="Search by tasks"
+          onkeypress="findEnterKey(event)"
+          required>
+        <button class="header__search-submit" type="button" onclick="findInTasks()"></button>
+      </form>
+    </header>
+    
+    <main class="main">
+      <section class="main__buttons" onclick="sorting(event)">
+        <h2 class="main__title">Sorting tasks</h2>
+        <button class="main__button active">All</button>
+        <button class="main__button">Active</button>
+        <button class="main__button">Done</button>
+      </section>
+
+      <section class="main__tasks tasks">
+        <h2 class="tasks__title">Task list</h2>
+        <form class="tasks__form form">
+          <label class="form__label" for="id-enter-task">New Task</label>
+          <textarea class="form__textarea" 
+            name="enter-task" 
+            id="id-enter-task" 
+          ></textarea>
+          <button class="form__add-button" 
+            type="button" 
+            onclick="addTask()"
+          >add</button>
+        </form>
+        <ul class="tasks__list" onclick="activity(event)">
+          <!-- Оставил для примера структуры задачи. -->
+          <!-- <li class="tasks__items focus-within active" tabindex="0">
+            <p class="tasks__text"><span class="tasks__star">&star;</span>Попить чайку</p>
+            <button class="tasks__button-important">mark important</button>
+            <button class="tasks__button-delete"></button>
+          </li> -->
+        </ul>
+      </section>
+    </main>
+    <script src="./scripts/polyfills/clamp.js"></script>
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>

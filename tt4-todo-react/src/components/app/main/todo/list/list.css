@@ -1,0 +1,8 @@
+.tasks__list {
+  overflow: auto;
+  list-style-type: none;
+  max-width: 803px;
+  max-height: 655px;
+  margin-top: 3px;
+  padding: 3px 20px 20px 20px;
+}

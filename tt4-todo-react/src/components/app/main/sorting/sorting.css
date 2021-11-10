@@ -1,0 +1,15 @@
+.main__buttons-wrapper {
+  display: flex;
+  max-width: 759px;
+  height: 50px;
+  margin: 31px 20px 0 3.05%;
+  background-image: linear-gradient(#e2e2e2 1px, transparent 1px);
+}
+
+.main__title {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}

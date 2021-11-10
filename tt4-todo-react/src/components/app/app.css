@@ -1,0 +1,11 @@
+.background-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 903px;
+  max-height: 735px;
+  right: 6px;
+  bottom: 22px;
+  z-index: -1;
+  object-fit: cover;
+}

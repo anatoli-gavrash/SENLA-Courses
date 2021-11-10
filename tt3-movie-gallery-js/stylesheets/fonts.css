@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'LilitaOneRussian';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('../fonts/Lilita-One/LilitaOneRussian-Regular.woff2') format('woff2'),
+      url('../fonts/Lilita-One/LilitaOneRussian-Regular.woff') format('woff');
+}
